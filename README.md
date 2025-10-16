@@ -17,7 +17,7 @@ CloudX adalah kumpulan repositori dari CloudStream untuk nonton film dengan subt
 | LayarKaca     | Indonesia    | Active  |
 | Melongmovie   | Indonesia    | Active  |
 | Moviebox      | Indonesia    | Active  |
-| NetflixMirror | Indonesia    | Active  |
+| NetflixMirror | Multi        | Active  |
 | Oploverz      | Indonesia    | Active  |
 | Oppadrama     | Indonesia    | Active  |
 | Oppadrama     | Indonesia    | Active  |
