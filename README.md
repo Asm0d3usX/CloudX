@@ -31,7 +31,7 @@ CloudX adalah kumpulan repositori dari CloudStream untuk nonton film dengan subt
 1.  Buka aplikasi CloudStream jika belum punya download [DISINI](https://github.com/recloudstream/cloudstream/releases)
 2.  Buka menu "Ekstensi"
 3.  Klik tombol "Tambahkan Repositori"
-4.  Masukkan URL repositori CloudX: https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json
+4.  Masukkan URL repositori CloudX : https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json
 5.  Klik "Tambahkan"
 6.  Ekstensi yang tersedia akan muncul di daftar
 7.  Pilih ekstensi yang ingin Anda instal dan klik "Instal"
