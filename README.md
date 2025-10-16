@@ -2,11 +2,6 @@
 
 CloudX adalah kumpulan repositori dari CloudStream untuk nonton film dengan subtitle Indonesia
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 ## Daftar Ekstensi
 
 | Nama Ekstensi |Region        | Status  |
