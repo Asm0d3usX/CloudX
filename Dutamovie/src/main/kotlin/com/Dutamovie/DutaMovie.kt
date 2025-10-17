@@ -28,9 +28,11 @@ class DutaMovie : MainAPI() {
             mainPageOf(
                     "category/box-office/page/%d/" to "Box Office",
                     "category/serial-tv/page/%d/" to "Serial TV",
-                    "category/animation/page/%d/" to "Animasi",
+                    "category/animation/page/%d/" to "Anime",
                     "country/korea/page/%d/" to "Serial TV Korea",
                     "country/indonesia/page/%d/" to "Serial TV Indonesia",
+					"vivamax-sub-indo/page/%d/" to "Vivamax",
+					"nonton-semi-korea/page/%d/" to "Semi Korea",
             )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
