@@ -27,8 +27,11 @@ class Pusatfilm : MainAPI() {
             "genre/action/page/%d/" to "Film Action",
             "series-terbaru/page/%d/" to "Series Terbaru",
             "drama-korea/page/%d/" to "Drama Korea",
+			"country/philippines/page/%d/" to "Drama Filipina",
+			"drama-china/page/%d/" to "Drama China",
+			"country/thailand/page/%d/" to "Drama Thailand",
             "west-series/page/%d/" to "West Series",
-            "drama-china/page/%d/" to "Drama China",
+			"series-netflix/page/%d/" to "Series Netflix",
         )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
