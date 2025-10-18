@@ -41,10 +41,10 @@ class Samehadaku : MainAPI() {
 
     override val mainPage = mainPageOf(
         "$mainUrl/page/" to "Episode Terbaru",
-		"$mainUrl/anime-terbaru/page/" to "Anime Terbaru",
-		"$mainUrl/anime-movie/page/" to "Anime Movie",
-		"$mainUrl/genre/action/page/" to "Anime Action",
-		"$mainUrl/genre/comedy/page/" to "Anime Comedy",
+		"$mainUrl/anime-terbaru/" to "Anime Terbaru",
+		"$mainUrl/anime-movie/" to "Anime Movie",
+		"$mainUrl/genre/action/" to "Anime Action",
+		"$mainUrl/genre/comedy/" to "Anime Comedy",
         "$mainUrl/" to "HomePage",
     )
 
