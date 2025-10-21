@@ -83,10 +83,34 @@
         ],
         "version": 3,
         "internalName": "Funmovieslix",
-		    "description": "Movie Subtitle Indonesia",
+		"description": "Movie Subtitle Indonesia",
         "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.jar",
         "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.cs3",
         "name": "Funmovieslix"
+    },
+	{
+        "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
+        "fileSize": 24252,
+		"jarFileSize": 94324,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "Hexated",
+            "Asm0d3usX"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Anime",
+            "AsianDrama"
+        ],
+        "version": 19,
+        "internalName": "Idlix",
+		"jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.jar",
+        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.cs3",
+        "name": "Idlix"
     },
 	{
         "iconUrl": "https://cdn-icons-png.flaticon.com/512/4123/4123763.png",
