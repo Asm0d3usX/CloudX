@@ -89,29 +89,25 @@
         "name": "Funmovieslix"
     },
 	{
-        "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
-        "jarFileSize": 95526,
+        "iconUrl": "https://cdn-icons-png.flaticon.com/512/4123/4123763.png",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 23914,
+        "repositoryUrl": "https://github.com/Asm0d3usX/TestRepo",
+        "fileSize": 26988,
         "status": 1,
         "language": "id",
         "authors": [
-            "Phisher98",
-			      "Asm0d3usX"
+            "Asm0d3usX"
         ],
         "tvTypes": [
-            "TvSeries",
             "Movie",
-            "Anime",
-            "AsianDrama"
+            "AsianDrama",
+            "TvSeries"
         ],
         "version": 2,
-        "internalName": "Idlix",
-		    "description": "Movie Subtitle Indonesia",
-        "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.jar",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.cs3",
-        "name": "Idlix"
+        "internalName": "Anonymous",
+        "description": "Movie Subtitle Indonesia",
+        "url": "https://raw.githubusercontent.com/Asm0d3usX/TestRepo/builds/Anonymous.cs3",
+        "name": "Anonymous"
     },
 	{
         "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
