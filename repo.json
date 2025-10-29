@@ -1,9 +1,9 @@
 {
-    "name": "CloudX",
-    "description": "Indonesian Repository for CloudStream",
-    "iconUrl": "https://i.ibb.co.com/q3YkdNRv/asm0d3usx.png",
-    "manifestVersion": 1,
-    "pluginLists": [
-      "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/plugins.json"
-    ]
+  "name": "CloudX",
+  "description": "🇮🇩 Indonesian Repository for CloudStream",
+  "iconUrl": "https://i.ibb.co/q3YkdNRv/asm0d3usx.png",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/plugins.json"
+  ]
 }
