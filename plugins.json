@@ -1,427 +1,295 @@
 [
-	{
-        "iconUrl": "https://1.bp.blogspot.com/-713bWoqV1B8/XcKqwjGjsZI/AAAAAAAAFiM/3nA8P_d50FcCWEnw6uhSeVEtPzKDH6_eQCLcBGAsYHQ/s1600/animasu.ico",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 23228,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "version": 1,
-        "internalName": "Animasu",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Animasu.cs3",
-        "name": "Animasu"
-    },
-    {
-        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 17754,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-            "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "version": 15,
-        "internalName": "AnimeSail",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/AnimeSail.cs3",
-        "name": "AnimeSail"
-    },
-	{
-        "iconUrl": "https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 25958,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-            "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 2,
-        "internalName": "Dutamovie",
-        "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Dutamovie.cs3",
-        "name": "Dutamovie"
-    },
-	{
-        "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download-60x60.png",
-        "jarFileSize": 69324,
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 18444,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Phisher98",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "version": 3,
-        "internalName": "Funmovieslix",
-		"description": "Movie Subtitle Indonesia",
-        "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.jar",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.cs3",
-        "name": "Funmovieslix"
-    },
-	{
-        "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
-        "fileSize": 24252,
-		"jarFileSize": 94324,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-            "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Movie",
-            "Anime",
-            "AsianDrama"
-        ],
-        "version": 19,
-        "internalName": "Idlix",
-		"jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.jar",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.cs3",
-        "name": "Idlix"
-    },
-	{
-        "iconUrl": "https://cdn-icons-png.flaticon.com/512/4123/4123763.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/TestRepo",
-        "fileSize": 26988,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "Movie",
-            "AsianDrama",
-            "TvSeries"
-        ],
-        "version": 2,
-        "internalName": "Anonymous",
-        "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/TestRepo/builds/Anonymous.cs3",
-        "name": "Anonymous"
-    },
-	{
-        "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 25772,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Duro92",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 1,
-        "internalName": "Kawanfilm",
-        "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kawanfilm.cs3",
-        "name": "Kawanfilm"
-    },
-	{
-        "iconUrl": "https://v8.kuramanime.tel/assets/img/logo-full-512.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 28986,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "version": 40,
-        "internalName": "Kuramanime",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kuramanime.cs3",
-        "name": "Kuramanime"
-    },
-	{
-        "iconUrl": "https://i3.wp.com/kuronime.moe/wp-content/uploads/2020/08/cropped-favicon-1-32x32.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 24823,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "version": 21,
-        "internalName": "Kuronime",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kuronime.cs3",
-        "name": "Kuronime"
-    },
-	{
-        "iconUrl": "https://assets.lk21.party/favicon.ico",
-        "jarFileSize": 81231,
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 18911,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 5,
-        "internalName": "LayarKaca",
-		    "description": "Movie Subtitle Indonesia",
-        "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.jar",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
-        "name": "LayarKaca"
-    },
-	{
-        "iconUrl": "https://adikfilm.click/wp-content/uploads/2019/08/iconku.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 17596,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Duro92",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 2,
-        "internalName": "Melongmovie",
-        "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Melongmovie.cs3",
-        "name": "Melongmovie"
-    },
-	{
-        "iconUrl": "https://moviebox.ph/favicon.ico",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 27273,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Movie",
-            "Anime",
-            "AsianDrama"
-        ],
-        "version": 3,
-        "internalName": "Moviebox",
-		    "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
-        "name": "Moviebox"
-    },
-	{
-        "iconUrl": "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 44243,
-        "status": 1,
-		    "language": "en",
-        "authors": [
-            "megix",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "AsianDrama",
-            "Anime"
-        ],
-        "version": 31,
-        "internalName": "Netflix",
-        "description": "Netflix, PrimeVideo, JioHotstar(Hotstar, Disney, Paramount, HBO, Peacock) Content in Multiple Languages",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Netflix.cs3",
-        "name": "Netflix"
-    },
-	{
-        "iconUrl": "https://backapi.oploverz.ac/uploads/settings/website/favicons/3161ce4d-ce90-4d07-b019-57bf64a9594e.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 25222,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "version": 32,
-        "internalName": "Oploverz",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Oploverz.cs3",
-        "name": "Oploverz"
-    },
-	{
-        "iconUrl": "https://i3.wp.com/45.11.57.243/wp-content/uploads/2021/05/Oppadrama.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 15081,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Duro92",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 2,
-        "internalName": "Oppadrama",
-        "description": "Drama Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Oppadrama.cs3",
-        "name": "Oppadrama"
-    },
-	{
-        "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww93.pencurimovie.bond/&size=256",
-        "jarFileSize": 51198,
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 13143,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Phisher98",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "version": 5,
-        "internalName": "Pencurimovie",
-        "description": "Movie Subtitle Indonesia",
-        "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.jar",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.cs3",
-        "name": "Pencurimovie"
-    },
-	{
-        "iconUrl": "https://v1.pusatfilm21info.com/wp-content/uploads/2018/03/cropped-icon-60x60.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 15789,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-            "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 3,
-        "internalName": "Pusatfilm",
-        "description": "Movie Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatfilm.cs3",
-        "name": "Pusatfilm"
-    },
-	{
-        "iconUrl": "https://v1.samehadaku.how/wp-content/uploads/2020/04/cropped-download-1-32x32.jpg",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 17279,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "version": 24,
-        "internalName": "Samehadaku",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Samehadaku.cs3",
-        "name": "Samehadaku"
-    },
-	{
-        "iconUrl": "https://zoronime.com/wp-content/themes/zoronime/favicon.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-        "fileSize": 16699,
-        "status": 1,
-        "language": "id",
-        "authors": [
-            "Hexated",
-			      "Asm0d3usX"
-        ],
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "version": 1,
-        "internalName": "Zoronime",
-		    "description": "Anime Subtitle Indonesia",
-        "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Zoronime.cs3",
-        "name": "Zoronime"
-    }
+  {
+    "iconUrl": "https://1.bp.blogspot.com/-713bWoqV1B8/XcKqwjGjsZI/AAAAAAAAFiM/3nA8P_d50FcCWEnw6uhSeVEtPzKDH6_eQCLcBGAsYHQ/s1600/animasu.ico",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 23025,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "OVA", "Anime"],
+    "version": 1,
+    "internalName": "Animasu",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Animasu.cs3",
+    "name": "Animasu"
+  },
+  {
+    "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 17672,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "Anime", "OVA"],
+    "version": 1,
+    "internalName": "AnimeSail",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/AnimeSail.cs3",
+    "name": "AnimeSail"
+  },
+  {
+    "iconUrl": "https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 26058,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "DutaMovie",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/DutaMovie.cs3",
+    "name": "DutaMovie"
+  },
+  {
+    "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download-60x60.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 18437,
+	"jarFileSize": 69214,
+    "status": 1,
+    "language": "id",
+    "authors": ["Phisher98", "Asm0d3usX"],
+    "tvTypes": ["Movie", "TvSeries"],
+    "version": 1,
+    "internalName": "FunMovieslix",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/FunMovieslix.jar",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/FunMovieslix.cs3",
+    "name": "FunMovieslix"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/vvJSzBrj/music-12752236.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 26101,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["Movie", "TvSeries"],
+    "version": 1,
+    "internalName": "GudangMovie",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/GudangMovie.cs3",
+    "name": "GudangMovie"
+  },
+  {
+    "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
+    "fileSize": 23485,
+    "jarFileSize": 91980,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
+    "version": 1,
+    "internalName": "Idlix",
+    "description": "🎬 & 🎭 Subtitle Indonesia",
+    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.jar",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.cs3",
+    "name": "Idlix"
+  },
+  {
+    "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 25763,
+    "status": 1,
+    "language": "id",
+    "authors": ["Duro92", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Kawanfilm",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kawanfilm.cs3",
+    "name": "KawanFilm"
+  },
+  {
+    "iconUrl": "https://v8.kuramanime.tel/assets/img/logo-full-512.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 28795,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "Anime", "OVA"],
+    "version": 1,
+    "internalName": "Kuramanime",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kuramanime.cs3",
+    "name": "Kuramanime"
+  },
+  {
+    "iconUrl": "https://i3.wp.com/kuronime.moe/wp-content/uploads/2020/08/cropped-favicon-1-32x32.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 24692,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "Anime", "OVA"],
+    "version": 1,
+    "internalName": "Kuronime",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kuronime.cs3",
+    "name": "Kuronime"
+  },
+  {
+    "iconUrl": "https://assets.lk21.party/favicon.ico",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 19061,
+	"jarFileSize": 78624,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "LayarKaca",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.jar",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
+    "name": "LayarKaca"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/N2nW2QQ7/popcorn-15195871.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 25892,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "LayarMovie",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarMovie.cs3",
+    "name": "LayarMovie"
+  },
+  {
+    "iconUrl": "https://adikfilm.click/wp-content/uploads/2019/08/iconku.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 17685,
+    "status": 1,
+    "language": "id",
+    "authors": ["Duro92", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Melongmovie",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Melongmovie.cs3",
+    "name": "MelongMovie"
+  },
+  {
+    "iconUrl": "https://moviebox.ph/favicon.ico",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 27327,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
+    "version": 1,
+    "internalName": "Moviebox",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
+    "name": "Moviebox"
+  },
+  {
+    "iconUrl": "https://backapi.oploverz.ac/uploads/settings/website/favicons/3161ce4d-ce90-4d07-b019-57bf64a9594e.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 25201,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "Anime", "OVA"],
+    "version": 1,
+    "internalName": "Oploverz",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Oploverz.cs3",
+    "name": "Oploverz"
+  },
+  {
+    "iconUrl": "https://i3.wp.com/45.11.57.243/wp-content/uploads/2021/05/Oppadrama.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 14967,
+    "status": 1,
+    "language": "id",
+    "authors": ["Duro92", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Oppadrama",
+    "description": "🎭 Drama Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Oppadrama.cs3",
+    "name": "OppaDrama"
+  },
+  {
+    "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww93.pencurimovie.bond/&size=256",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 13087,
+	"jarFileSize": 50900,
+    "status": 1,
+    "language": "id",
+    "authors": ["Phisher98", "Asm0d3usX"],
+    "tvTypes": ["Movie", "TvSeries"],
+    "version": 1,
+    "internalName": "Pencurimovie",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.jar",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.cs3",
+    "name": "PencuriMovie"
+  },
+  {
+    "iconUrl": "https://v1.pusatfilm21info.com/wp-content/uploads/2018/03/cropped-icon-60x60.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 16060,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Pusatfilm",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatfilm.cs3",
+    "name": "PusatFilm"
+  },
+  {
+    "iconUrl": "https://v1.samehadaku.how/wp-content/uploads/2020/04/cropped-download-1-32x32.jpg",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 17282,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "OVA", "Anime"],
+    "version": 1,
+    "internalName": "Samehadaku",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Samehadaku.cs3",
+    "name": "Samehadaku"
+  },
+  {
+    "iconUrl": "https://zoronime.com/wp-content/themes/zoronime/favicon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 16771,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "OVA", "Anime"],
+    "version": 1,
+    "internalName": "Zoronime",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Zoronime.cs3",
+    "name": "Zoronime"
+  }
 ]
