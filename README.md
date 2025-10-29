@@ -1,6 +1,6 @@
 # CloudX ☁️
 
-**CloudX** adalah kumpulan repositori dari CloudStream untuk menonton film dengan subtitle Indonesia 🇮🇩  
+**CloudX** adalah kumpulan repositori dari CloudStream untuk menonton film dengan subtitle Indonesia  
 
 ---
 
