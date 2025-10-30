@@ -45,23 +45,6 @@
     "name": "DutaMovie"
   },
   {
-    "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download-60x60.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 18437,
-	"jarFileSize": 69214,
-    "status": 1,
-    "language": "id",
-    "authors": ["Phisher98", "Asm0d3usX"],
-    "tvTypes": ["Movie", "TvSeries"],
-    "version": 1,
-    "internalName": "Funmovieslix",
-    "description": "🎬 Movie Subtitle Indonesia",
-    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.jar",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.cs3",
-    "name": "Funmovieslix"
-  },
-  {
     "iconUrl": "https://i.ibb.co.com/vvJSzBrj/music-12752236.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -195,10 +178,10 @@
     "authors": ["Hexated", "Asm0d3usX"],
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
-    "internalName": "MovieBox",
+    "internalName": "Moviebox",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/MovieBox.cs3",
-    "name": "MovieBox"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
+    "name": "Moviebox"
   },
   {
     "iconUrl": "https://backapi.oploverz.ac/uploads/settings/website/favicons/3161ce4d-ce90-4d07-b019-57bf64a9594e.png",
