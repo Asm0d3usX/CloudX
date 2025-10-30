@@ -55,11 +55,11 @@
     "authors": ["Phisher98", "Asm0d3usX"],
     "tvTypes": ["Movie", "TvSeries"],
     "version": 1,
-    "internalName": "FunMovieslix",
+    "internalName": "Funmovieslix",
     "description": "🎬 Movie Subtitle Indonesia",
-    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/FunMovieslix.jar",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/FunMovieslix.cs3",
-    "name": "FunMovieslix"
+    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.jar",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.cs3",
+    "name": "Funmovieslix"
   },
   {
     "iconUrl": "https://i.ibb.co.com/vvJSzBrj/music-12752236.png",
@@ -103,10 +103,10 @@
     "authors": ["Duro92", "Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
-    "internalName": "KawanFilm",
+    "internalName": "Kawanfilm",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/KawanFilm.cs3",
-    "name": "KawanFilm"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kawanfilm.cs3",
+    "name": "Kawanfilm"
   },
   {
     "iconUrl": "https://v8.kuramanime.tel/assets/img/logo-full-512.png",
@@ -183,7 +183,7 @@
     "internalName": "Melongmovie",
     "description": "🎬 Movie Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Melongmovie.cs3",
-    "name": "MelongMovie"
+    "name": "Melongmovie"
   },
   {
     "iconUrl": "https://moviebox.ph/favicon.ico",
@@ -195,10 +195,10 @@
     "authors": ["Hexated", "Asm0d3usX"],
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
-    "internalName": "Moviebox",
+    "internalName": "MovieBox",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
-    "name": "Moviebox"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/MovieBox.cs3",
+    "name": "MovieBox"
   },
   {
     "iconUrl": "https://backapi.oploverz.ac/uploads/settings/website/favicons/3161ce4d-ce90-4d07-b019-57bf64a9594e.png",
@@ -225,9 +225,9 @@
     "authors": ["Duro92", "Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
-    "internalName": "Oppadrama",
+    "internalName": "OppaDrama",
     "description": "🎭 Drama Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Oppadrama.cs3",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/OppaDrama.cs3",
     "name": "OppaDrama"
   },
   {
@@ -245,7 +245,7 @@
     "description": "🎬 Movie Subtitle Indonesia",
     "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.jar",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.cs3",
-    "name": "PencuriMovie"
+    "name": "Pencurimovie"
   },
   {
     "iconUrl": "https://v1.pusatfilm21info.com/wp-content/uploads/2018/03/cropped-icon-60x60.png",
@@ -257,10 +257,10 @@
     "authors": ["Hexated", "Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
-    "internalName": "PusatFilm",
+    "internalName": "Pusatfilm",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/PusatFilm.cs3",
-    "name": "PusatFilm"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatfilm.cs3",
+    "name": "Pusatfilm"
   },
   {
     "iconUrl": "https://v1.samehadaku.how/wp-content/uploads/2020/04/cropped-download-1-32x32.jpg",
