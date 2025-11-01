@@ -45,21 +45,6 @@
     "name": "DutaMovie"
   },
   {
-    "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 26101,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["Movie", "TvSeries"],
-    "version": 1,
-    "internalName": "WGFilm21",
-    "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/WGFilm21.cs3",
-    "name": "WGFilm21"
-  },
-  {
     "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
@@ -259,6 +244,21 @@
     "description": "🎭 Anime Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Samehadaku.cs3",
     "name": "Samehadaku"
+  },
+  {
+    "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21081,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["Movie", "TvSeries"],
+    "version": 1,
+    "internalName": "WGFilm21",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/WGFilm21.cs3",
+    "name": "WGFilm21"
   },
   {
     "iconUrl": "https://zoronime.com/wp-content/themes/zoronime/favicon.png",
