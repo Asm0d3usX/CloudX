@@ -45,7 +45,7 @@
     "name": "DutaMovie"
   },
   {
-    "iconUrl": "https://www.spblinuxfest.com/wp-content/uploads/2025/10/download-1-60x60.png",
+    "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 26101,
@@ -54,10 +54,10 @@
     "authors": ["Asm0d3usX"],
     "tvTypes": ["Movie", "TvSeries"],
     "version": 1,
-    "internalName": "GudangMovie",
+    "internalName": "WGFilm21",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/GudangMovie.cs3",
-    "name": "GudangMovie"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/WGFilm21.cs3",
+    "name": "WGFilm21"
   },
   {
     "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
