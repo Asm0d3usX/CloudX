@@ -9,17 +9,16 @@
     "authors": ["Hexated", "Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
-    "internalName": "DutaMovie",
+    "internalName": "Dutamovie",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/DutaMovie.cs3",
-    "name": "DutaMovie"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Dutamovie.cs3",
+    "name": "Dutamovie"
   },
   {
     "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
     "fileSize": 23485,
-    "jarFileSize": 91980,
     "status": 1,
     "language": "id",
     "authors": ["Hexated", "Asm0d3usX"],
@@ -27,7 +26,6 @@
     "version": 1,
     "internalName": "Idlix",
     "description": "🎬 & 🎭 Subtitle Indonesia",
-    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Idlix.jar",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Idlix.cs3",
     "name": "Idlix"
   },
@@ -51,7 +49,6 @@
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 19061,
-    "jarFileSize": 78624,
     "status": 1,
     "language": "id",
     "authors": ["Hexated", "Asm0d3usX"],
@@ -59,12 +56,11 @@
     "version": 1,
     "internalName": "LayarKaca",
     "description": "🎬 Movie Subtitle Indonesia",
-    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/LayarKaca.jar",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/LayarKaca.cs3",
     "name": "LayarKaca"
   },
   {
-    "iconUrl": "https://i.ibb.co.com/N2nW2QQ7/popcorn-15195871.png",
+    "iconUrl": "https://play5.layarwarna21.tv/wp-content/uploads/2023/06/cropped-FAV-ICON-2-60x60.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 25892,
@@ -73,13 +69,13 @@
     "authors": ["Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
-    "internalName": "LayarMovie",
+    "internalName": "LayarWarna",
     "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/LayarMovie.cs3",
-    "name": "LayarMovie"
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/LayarWarna.cs3",
+    "name": "LayarWarna"
   },
   {
-    "iconUrl": "https://adikfilm.click/wp-content/uploads/2019/08/iconku.png",
+    "iconUrl": "https://i0.wp.com/tv11.melongmovies.com/wp-content/uploads/2020/05/cropped-m-32x32.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 17685,
@@ -124,11 +120,10 @@
     "name": "OppaDrama"
   },
   {
-    "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww93.pencurimovie.bond/&size=256",
+    "iconUrl": "https://ww93.pencurimovie.bond/wp-content/themes/PP-2.0.8/images/favicon.pn",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 13087,
-    "jarFileSize": 50900,
     "status": 1,
     "language": "id",
     "authors": ["Phisher98", "Asm0d3usX"],
@@ -136,7 +131,6 @@
     "version": 1,
     "internalName": "Pencurimovie",
     "description": "🎬 Movie Subtitle Indonesia",
-    "jarUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Pencurimovie.jar",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Pencurimovie.cs3",
     "name": "Pencurimovie"
   },
@@ -154,6 +148,21 @@
     "description": "🎬 Movie Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Pusatfilm.cs3",
     "name": "Pusatfilm"
+  },
+  {
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/10658/10658933.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 24081,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["Movie"],
+    "version": 1,
+    "internalName": "Unknown",
+    "description": "🎬 Japan Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Unknown.cs3",
+    "name": "Unknown"
   },
   {
     "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Canal_Viva_2018_wordmark.svg/960px-Canal_Viva_2018_wordmark.svg.png",
