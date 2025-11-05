@@ -6,13 +6,13 @@
 
 ## 🎬 Ekstensi Anime
 
-| Nama Ekstensi | Region     | Status    |
-| ------------- | ---------- | ---------- |
-| Animasu       | Indonesia  | 🔥 Active |
-| AnimeSail     | Indonesia  | 🔥 Active |
-| Oploverz      | Indonesia  | 🔥 Active |
-| Samehadaku    | Indonesia  | 🔥 Active |
-| Zoronime      | Indonesia  | 🔥 Active |
+| Nama Ekstensi | Region     | Status          |
+| ------------- | ---------- | --------------- |
+| Animasu       | Indonesia  | 🔥 Active       |
+| AnimeSail     | Indonesia  | 🔥 Active       |
+| Oploverz      | Indonesia  | 🔥 Active       |
+| Samehadaku    | Indonesia  | 🔥 Active       |
+| Zoronime      | Indonesia  | 🔥 Active       |
 
 
 ---
