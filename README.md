@@ -19,21 +19,20 @@
 
 ## 🎬 Ekstensi Movie
 
-| Nama Ekstensi | Region     | Status          |
-| ------------- | ---------- | --------------- |
-| Dutamovie     | Indonesia  | 🔥 Active       |
-| Idlix         | Indonesia  | 🔥 Active       |
-| Kawanfilm     | Indonesia  | 🔥 Active       |
-| LayarKaca     | Indonesia  | 🔥 Active       |
-| LayarWarna    | Indonesia  | 🔥 Active       |
-| Melongmovie   | Indonesia  | 🔥 Active       |
-| Moviebox      | Indonesia  | 🔥 Active       |
-| OppaDrama     | Indonesia  | 🔥 Active       |
-| PencuriMovie  | Indonesia  | 🔥 Active       |
-| PusatFilm     | Indonesia  | 🔥 Active       |
-| Unknown       | Indonesia  | 🔥 Active (VPN) |
-| Vivax         | Indonesia  | 🔥 Active (VPN) |
-| WGFilm21      | Indonesia  | 🔥 Active       |
+| Nama Ekstensi | Region     | Status     |
+| ------------- | ---------- | ---------- |
+| Dutamovie     | Indonesia  | 🔥 Active |
+| Idlix         | Indonesia  | 🔥 Active |
+| Kawanfilm     | Indonesia  | 🔥 Active |
+| LayarKaca     | Indonesia  | 🔥 Active |
+| LayarWarna    | Indonesia  | 🔥 Active |
+| Melongmovie   | Indonesia  | 🔥 Active |
+| Moviebox      | Indonesia  | 🔥 Active |
+| OppaDrama     | Indonesia  | 🔥 Active |
+| PencuriMovie  | Indonesia  | 🔥 Active |
+| PusatFilm     | Indonesia  | 🔥 Active |
+| Unknown       | Indonesia  | 🔥 Active |
+| WGFilm21      | Indonesia  | 🔥 Active |
 
 ---
 
