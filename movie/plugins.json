@@ -165,21 +165,6 @@
     "name": "Unknown"
   },
   {
-    "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Canal_Viva_2018_wordmark.svg/960px-Canal_Viva_2018_wordmark.svg.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 18081,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["Movie", "TvSeries"],
-    "version": 1,
-    "internalName": "VivaX",
-    "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/VivaX.cs3",
-    "name": "VivaX"
-  },
-  {
     "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -195,3 +180,4 @@
     "name": "WGFilm21"
   }
 ]
+
