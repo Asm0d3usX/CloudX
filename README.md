@@ -4,29 +4,36 @@
 
 ---
 
-## 🎬 Daftar Ekstensi
+## 🎬 Ekstensi Anime
 
-| Nama Ekstensi | Region      | Status       |
-| ------------- | ---------- | ------------ |
-| Animasu       | Indonesia  | ✅ Active 🔥 |
-| AnimeSail     | Indonesia  | ✅ Active 🔥 |
-| DutaMovie     | Indonesia  | ✅ Active 🔥 |
-| FunMovieslix  | Indonesia  | ✅ Active 🔥 |
-| GudangMovie   | Indonesia  | ✅ Active 🔥 |
-| Idlix         | Indonesia  | ✅ Active 🔥 |
-| KawanFilm     | Indonesia  | ✅ Active 🔥 |
-| Kuramanime    | Indonesia  | ✅ Active 🔥 |
-| Kuronime      | Indonesia  | ✅ Active 🔥 |
-| LayarKaca     | Indonesia  | ✅ Active 🔥 |
-| LayarMovie    | Indonesia  | ✅ Active 🔥 |
-| MelongMovie   | Indonesia  | ✅ Active 🔥 |
-| Moviebox      | Indonesia  | ✅ Active 🔥 |
-| Oploverz      | Indonesia  | ✅ Active 🔥 |
-| OppaDrama     | Indonesia  | ✅ Active 🔥 |
-| PencuriMovie  | Indonesia  | ✅ Active 🔥 |
-| PusatFilm     | Indonesia  | ✅ Active 🔥 |
-| Samehadaku    | Indonesia  | ✅ Active 🔥 |
-| Zoronime      | Indonesia  | ✅ Active 🔥 |
+| Nama Ekstensi | Region     | Status    |
+| ------------- | ---------- | ---------- |
+| Animasu       | Indonesia  | 🔥 Active |
+| AnimeSail     | Indonesia  | 🔥 Active |
+| Oploverz      | Indonesia  | 🔥 Active |
+| Samehadaku    | Indonesia  | 🔥 Active |
+| Zoronime      | Indonesia  | 🔥 Active |
+
+
+---
+
+## 🎬 Ekstensi Movie
+
+| Nama Ekstensi | Region     | Status          |
+| ------------- | ---------- | --------------- |
+| Dutamovie     | Indonesia  | 🔥 Active       |
+| Idlix         | Indonesia  | 🔥 Active       |
+| Kawanfilm     | Indonesia  | 🔥 Active       |
+| LayarKaca     | Indonesia  | 🔥 Active       |
+| LayarWarna    | Indonesia  | 🔥 Active       |
+| Melongmovie   | Indonesia  | 🔥 Active       |
+| Moviebox      | Indonesia  | 🔥 Active       |
+| OppaDrama     | Indonesia  | 🔥 Active       |
+| PencuriMovie  | Indonesia  | 🔥 Active       |
+| PusatFilm     | Indonesia  | 🔥 Active       |
+| Unknown       | Indonesia  | 🔥 Active (VPN) |
+| Vivax         | Indonesia  | 🔥 Active (VPN) |
+| WGFilm21      | Indonesia  | 🔥 Active       |
 
 ---
 
@@ -54,11 +61,7 @@ Untuk yang ingin build sendiri:
 3. Install **SDK Manager** (saran versi terbaru)  
 4. Build Gradle lewat cmd dengan perintah:  
 ```sh
-gradle build --info
-```
-  Atau build per ekstensi contohnya
-```sh
-gradle Animasu:make
+gradle example:make
 ```
 5. Selamat mencoba.
 
