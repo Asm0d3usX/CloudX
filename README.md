@@ -4,7 +4,7 @@
 
 ---
 
-## 🎬 Ekstensi Anime
+## 🎭 Ekstensi Anime
 
 | Nama Ekstensi | Region     | Status          |
 | ------------- | ---------- | --------------- |
