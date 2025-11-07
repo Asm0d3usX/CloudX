@@ -70,9 +70,8 @@ class LayarWarna : MainAPI() {
 		val document = fetch.document
 		directUrl = getBaseUrl(fetch.url)
 
-		val title = document.selectFirst("h1.entry-title")?.text()?.trim().orEmpty()
-		val poster = fixUrlNull(document.selectFirst("figure.pull-left img, div.content-thumbnail img")?.getImageAttr())
-			?.fixImageQuality()
+		val title = document.selectFirst("h1.entry-title")?.text()?.trim().orEmpty()		
+		val poster = fixUrlNull(document.selectFirst("div.gmr-movie-data figure img")?.getImageAttr()?.fixImageQuality())
 		val tags = document.select("div.gmr-moviedata a, div.gmr-movie-on a[rel='category tag']")
 			.map { it.text() }
 		val year = document.selectFirst("div.gmr-moviedata strong:contains(Year:) > a")
@@ -80,7 +79,7 @@ class LayarWarna : MainAPI() {
 			?: Regex("\\((\\d{4})\\)").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
 
 		val description = document.selectFirst("div[itemprop=description] p")?.text()?.trim()
-		val trailer = document.selectFirst("a.gmr-trailer-popup")?.attr("href")
+		val trailer = document.selectFirst("ul.gmr-player-nav a.gmr-trailer-popup")?.attr("href")
 		val rating = document.selectFirst("div.gmr-meta-rating span[itemprop=ratingValue], div.gmr-rating-item")
 			?.text()?.trim()
 		val actors = document.select("span[itemprop=actors] a").map { it.text() }
