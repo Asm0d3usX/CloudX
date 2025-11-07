@@ -19,15 +19,23 @@ open class Dingtezuni : ExtractorApi() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ) {
-        val headers = mapOf(
-            "Sec-Fetch-Dest" to "empty",
-            "Sec-Fetch-Mode" to "cors",
-            "Sec-Fetch-Site" to "cross-site",
-            "Origin" to mainUrl,
-            "User-Agent" to USER_AGENT,
-        )
+        val embedUrl = getEmbedUrl(url)
 
-        val response = app.get(getEmbedUrl(url), referer = referer)
+        val response = app.get(embedUrl, referer = referer)
+		val finalUrl = response.url
+
+		val uri = URI(finalUrl)
+		val finalDomain = uri.run { "$scheme://$host${if (port != -1) ":$port" else ""}" }
+
+		val headers = mapOf(
+			"Origin" to finalDomain,
+			"Referer" to "$finalDomain/",
+			"User-Agent" to USER_AGENT,
+			"Sec-Fetch-Dest" to "empty",
+			"Sec-Fetch-Mode" to "cors",
+			"Sec-Fetch-Site" to "cross-site"
+		)
+
         val html = response.text
 
         val script = if (!getPacked(html).isNullOrEmpty()) {
@@ -41,21 +49,21 @@ open class Dingtezuni : ExtractorApi() {
         Regex(":\\s*\"(.*?m3u8.*?)\"").findAll(script).forEach { match ->
             generateM3u8(
                 name,
-                fixUrl(match.groupValues[1]),
-                referer = "$mainUrl/",
+                fixUrl(match.groupValues[1], finalDomain),
+                referer = "$finalDomain/",
                 headers = headers
             ).forEach(callback)
         }
 
         val allText = html + "\n" + script
         val vttRegex = Regex("""https?://[^\s"'<>\\]+?\.vtt""")
-        val foundVtts = vttRegex.findAll(allText).map { it.value }.distinct().toList()
+        val foundVtts = vttRegex.findAll(allText).map { it.value }.distinct()
 
         foundVtts.forEach { vtt ->
             val lower = vtt.lowercase()
             when {
-                "_ind.vtt" in lower || "ind" in lower -> subtitleCallback(SubtitleFile("Indonesian", vtt))
-                "_eng.vtt" in lower || "english" in lower -> subtitleCallback(SubtitleFile("English", vtt))
+                "ind" in lower -> subtitleCallback(SubtitleFile("Indonesian", vtt))
+                "eng" in lower -> subtitleCallback(SubtitleFile("English", vtt))
                 else -> subtitleCallback(SubtitleFile("Auto", vtt))
             }
         }
@@ -66,6 +74,10 @@ open class Dingtezuni : ExtractorApi() {
         url.contains("/download/") -> url.replace("/download/", "/v/")
         url.contains("/file/") -> url.replace("/file/", "/v/")
         else -> url.replace("/f/", "/v/")
+    }
+
+    private fun fixUrl(link: String, domain: String): String {
+        return if (link.startsWith("http")) link else domain + link
     }
 }
 
