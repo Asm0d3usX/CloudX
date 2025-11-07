@@ -150,6 +150,21 @@
     "name": "Pusatfilm"
   },
   {
+    "iconUrl": "https://sarangfilm.fit/wp-content/uploads/2023/09/cropped-popcorn-2.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 26060,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Sarangfilm",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Sarangfilm.cs3",
+    "name": "Sarangfilm"
+  },
+  {
     "iconUrl": "https://cdn-icons-png.flaticon.com/512/10658/10658933.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -180,4 +195,5 @@
     "name": "WGFilm21"
   }
 ]
+
 
