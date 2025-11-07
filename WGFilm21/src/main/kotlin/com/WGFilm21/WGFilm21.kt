@@ -86,16 +86,13 @@ class WGFilm21 : MainAPI() {
         val document = app.get(url).document
         val title = document.selectFirst("h1.entry-title")?.text()
             ?.substringBefore("Season")?.substringBefore("Episode")?.trim().orEmpty()
-        val poster = fixUrlNull(
-            document.selectFirst("figure.pull-left img, div.content-thumbnail img, div.other-content-thumbnail img")
-                ?.getImageAttr()
-        )?.fixImageQuality()
+		val poster = fixUrlNull(document.selectFirst("div.gmr-movie-data figure img")?.getImageAttr()?.fixImageQuality())
         val tags = document.select("div.gmr-movie-on a, div.gmr-moviedata a").map { it.text() }
         val year = document.select("time[itemprop=dateCreated]")
             .attr("datetime").takeIf { it.isNotEmpty() }?.substringBefore("-")?.toIntOrNull()
         val tvType = if (url.contains("/tv/")) TvType.TvSeries else TvType.Movie
         val description = document.selectFirst("div[itemprop=description] > p, div.gmr-moviedata p")?.text()?.trim()
-        val trailer = document.selectFirst("a.gmr-trailer-popup")?.attr("href")
+        val trailer = document.selectFirst("ul.gmr-player-nav a.gmr-trailer-popup")?.attr("href")
         val rating = document.selectFirst("div.gmr-meta-rating span[itemprop=ratingValue], div.gmr-rating-item")
             ?.text()?.trim()
         val actors = document.select("span[itemprop=director] a, span[itemprop=actors] a").map { it.text() }
