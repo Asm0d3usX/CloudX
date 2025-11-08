@@ -15,6 +15,21 @@
     "name": "Dutamovie"
   },
   {
+    "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 19058,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Funmovieslix",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Funmovieslix.cs3",
+    "name": "Funmovieslix"
+  },
+  {
     "iconUrl": "https://tv9.idlixku.com/wp-content/uploads/2021/04/appicon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
@@ -103,6 +118,36 @@
     "description": "🎬 Movie Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Moviebox.cs3",
     "name": "Moviebox"
+  },
+  {
+    "iconUrl": "https://new24.ngefilm.site/wp-content/uploads/2023/08/imageedit_8_4481000408.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21685,
+    "status": 1,
+    "language": "id",
+    "authors": ["Duro92", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Ngefilm",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Ngefilm.cs3",
+    "name": "Ngefilm"
+  },
+  {
+    "iconUrl": "https://iili.io/JGJa71a.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 18685,
+    "status": 1,
+    "language": "id",
+    "authors": ["Duro92", "Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Nomat",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Nomat.cs3",
+    "name": "Nomat"
   },
   {
     "iconUrl": "https://i3.wp.com/45.11.57.243/wp-content/uploads/2021/05/Oppadrama.png",
@@ -195,5 +240,6 @@
     "name": "WGFilm21"
   }
 ]
+
 
 
