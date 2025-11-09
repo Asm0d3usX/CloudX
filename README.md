@@ -22,12 +22,15 @@
 | Nama Ekstensi | Region     | Status     |
 | ------------- | ---------- | ---------- |
 | Dutamovie     | Indonesia  | 🔥 Active |
+| Funmovieslix  | Indonesia  | 🔥 Active |
 | Idlix         | Indonesia  | 🔥 Active |
 | Kawanfilm     | Indonesia  | 🔥 Active |
 | LayarKaca     | Indonesia  | 🔥 Active |
 | LayarWarna    | Indonesia  | 🔥 Active |
 | Melongmovie   | Indonesia  | 🔥 Active |
 | Moviebox      | Indonesia  | 🔥 Active |
+| Ngefilm       | Indonesia  | 🔥 Active |
+| Nomat         | Indonesia  | 🔥 Active |
 | OppaDrama     | Indonesia  | 🔥 Active |
 | PencuriMovie  | Indonesia  | 🔥 Active |
 | PusatFilm     | Indonesia  | 🔥 Active |
