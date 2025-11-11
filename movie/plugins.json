@@ -15,6 +15,21 @@
     "name": "Dutamovie"
   },
   {
+    "iconUrl": "https://jinwar.org/wp-content/uploads/2025/08/cropped-lk21-1.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 22088,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Filmkita",
+    "description": "🎬 Movie Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Filmkita.cs3",
+    "name": "Filmkita"
+  },
+  {
     "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -43,6 +58,21 @@
     "description": "🎬 & 🎭 Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Idlix.cs3",
     "name": "Idlix"
+  },
+  {
+    "iconUrl": "https://movie21.indomax21.org/wp-content/uploads/2024/10/cropped-indomax21-favicon-color-1.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
+    "fileSize": 17989,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
+    "version": 1,
+    "internalName": "Indomax",
+    "description": "🎬 Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Indomax.cs3",
+    "name": "Indomax"
   },
   {
     "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
@@ -201,7 +231,7 @@
     "fileSize": 26060,
     "status": 1,
     "language": "id",
-    "authors": ["Hexated", "Asm0d3usX"],
+    "authors": ["Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Sarangfilm",
@@ -240,6 +270,7 @@
     "name": "WGFilm21"
   }
 ]
+
 
 
 
