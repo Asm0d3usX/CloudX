@@ -120,21 +120,6 @@
     "name": "LayarWarna"
   },
   {
-    "iconUrl": "https://i0.wp.com/tv11.melongmovies.com/wp-content/uploads/2020/05/cropped-m-32x32.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 17685,
-    "status": 1,
-    "language": "id",
-    "authors": ["Duro92", "Asm0d3usX"],
-    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
-    "version": 1,
-    "internalName": "Melongmovie",
-    "description": "🎬 Movie Subtitle Indonesia",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Melongmovie.cs3",
-    "name": "Melongmovie"
-  },
-  {
     "iconUrl": "https://moviebox.ph/favicon.ico",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -178,6 +163,21 @@
     "description": "🎬 Movie Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Nomat.cs3",
     "name": "Nomat"
+  },
+  {
+    "iconUrl": "https://nontonfilm.gratis/wp-content/uploads/2024/12/gratis-1.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 27685,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Operaverdi",
+    "description": "🎬 Movie & Series Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Operaverdi.cs3",
+    "name": "Operaverdi"
   },
   {
     "iconUrl": "https://i3.wp.com/45.11.57.243/wp-content/uploads/2021/05/Oppadrama.png",
@@ -270,6 +270,7 @@
     "name": "WGFilm21"
   }
 ]
+
 
 
 
