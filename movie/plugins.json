@@ -70,9 +70,24 @@
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
     "internalName": "Indomax",
-    "description": "🎬 Subtitle Indonesia",
+    "description": "🎬 Movie Subtitle Indonesia",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Indomax.cs3",
     "name": "Indomax"
+  },
+  {
+    "iconUrl": "https://tv1.javplix.org/wp-content/uploads/2024/12/icon-javplix-grey.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
+    "fileSize": 18089,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["Movie"],
+    "version": 1,
+    "internalName": "Javflix",
+    "description": "🎥 japan Movies",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/Javflix.cs3",
+    "name": "Javflix"
   },
   {
     "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
@@ -270,6 +285,7 @@
     "name": "WGFilm21"
   }
 ]
+
 
 
 
