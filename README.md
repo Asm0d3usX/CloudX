@@ -4,34 +4,23 @@
 
 ---
 
-## 🎭 Ekstensi Anime
-
-| Nama Ekstensi | Region     | Status          |
-| ------------- | ---------- | --------------- |
-| Animasu       | Indonesia  | 🔥 Active       |
-| AnimeSail     | Indonesia  | 🔥 Active       |
-| Oploverz      | Indonesia  | 🔥 Active       |
-| Samehadaku    | Indonesia  | 🔥 Active       |
-| Zoronime      | Indonesia  | 🔥 Active       |
-
-
----
-
 ## 🎬 Ekstensi Movie
 
 | Nama Ekstensi | Region     | Status     |
 | ------------- | ---------- | ---------- |
 | Dutamovie     | Indonesia  | 🔥 Active |
+| Filmkita      | Indonesia  | 🔥 Active |
 | Funmovieslix  | Indonesia  | 🔥 Active |
 | Idlix         | Indonesia  | 🔥 Active |
+| Indomax       | Indonesia  | 🔥 Active |
+| Javflix       | Indonesia  | 🔥 Active |
 | Kawanfilm     | Indonesia  | 🔥 Active |
 | LayarKaca     | Indonesia  | 🔥 Active |
 | LayarWarna    | Indonesia  | 🔥 Active |
-| Melongmovie   | Indonesia  | 🔥 Active |
 | Moviebox      | Indonesia  | 🔥 Active |
 | Ngefilm       | Indonesia  | 🔥 Active |
 | Nomat         | Indonesia  | 🔥 Active |
-| OppaDrama     | Indonesia  | 🔥 Active |
+| Operaverdi    | Indonesia  | 🔥 Active |
 | PencuriMovie  | Indonesia  | 🔥 Active |
 | PusatFilm     | Indonesia  | 🔥 Active |
 | Sarangfilm    | Indonesia  | 🔥 Active |
