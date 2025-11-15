@@ -1,10 +1,9 @@
 {
   "name": "CloudX",
-  "description": "🇮🇩 Indonesian Repository for CloudStream",
+  "description": "🇮🇩 Indonesian Movie Repository for CloudStream",
   "iconUrl": "https://i.ibb.co/q3YkdNRv/asm0d3usx.png",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/anime/plugins.json",
-    "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/movie/plugins.json"
+    "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/plugins.json"
   ]
 }
