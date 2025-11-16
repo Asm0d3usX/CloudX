@@ -10,7 +10,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Dutamovie",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Dutamovie.cs3",
     "name": "Dutamovie"
   },
@@ -25,7 +25,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Filmkita",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Filmkita.cs3",
     "name": "Filmkita"
   },
@@ -40,7 +40,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Funmovieslix",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Funmovieslix.cs3",
     "name": "Funmovieslix"
   },
@@ -55,7 +55,7 @@
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
     "internalName": "Idlix",
-    "description": "🎬 & 🎭 Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Idlix.cs3",
     "name": "Idlix"
   },
@@ -70,7 +70,7 @@
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
     "internalName": "Indomax",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Indomax.cs3",
     "name": "Indomax"
   },
@@ -85,7 +85,7 @@
     "tvTypes": ["Movie"],
     "version": 1,
     "internalName": "Javflix",
-    "description": "🎥 japan Movies",
+    "description": "📺 Streaming Jav Movie",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Javflix.cs3",
     "name": "Javflix"
   },
@@ -100,7 +100,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Kawanfilm",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Kawanfilm.cs3",
     "name": "Kawanfilm"
   },
@@ -115,7 +115,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "LayarKaca",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
     "name": "LayarKaca"
   },
@@ -130,7 +130,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "LayarWarna",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarWarna.cs3",
     "name": "LayarWarna"
   },
@@ -145,7 +145,7 @@
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
     "internalName": "Moviebox",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
     "name": "Moviebox"
   },
@@ -160,7 +160,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Ngefilm",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Ngefilm.cs3",
     "name": "Ngefilm"
   },
@@ -175,7 +175,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Nomat",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Nomat.cs3",
     "name": "Nomat"
   },
@@ -190,7 +190,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Operaverdi",
-    "description": "🎬 Movie & Series Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Operaverdi.cs3",
     "name": "Operaverdi"
   },
@@ -205,7 +205,7 @@
     "tvTypes": ["Movie", "TvSeries"],
     "version": 1,
     "internalName": "Pencurimovie",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.cs3",
     "name": "Pencurimovie"
   },
@@ -220,7 +220,7 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Pusatfilm",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatfilm.cs3",
     "name": "Pusatfilm"
   },
@@ -235,9 +235,24 @@
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Sarangfilm",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Sarangfilm.cs3",
     "name": "Sarangfilm"
+  },
+  {
+    "iconUrl": "https://new12.savefilm21info.com/wp-content/uploads/2018/11/s-png.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 20860,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Savefilm",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Savefilm.cs3",
+    "name": "Savefilm"
   },
   {
     "iconUrl": "https://cdn-icons-png.flaticon.com/512/10658/10658933.png",
@@ -250,7 +265,7 @@
     "tvTypes": ["Movie"],
     "version": 1,
     "internalName": "Unknown",
-    "description": "🎬 Japan Subtitle Indonesia",
+    "description": "📺 Streaming Jav Movie",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Unknown.cs3",
     "name": "Unknown"
   },
@@ -265,7 +280,7 @@
     "tvTypes": ["Movie", "TvSeries"],
     "version": 1,
     "internalName": "WGFilm21",
-    "description": "🎬 Movie Subtitle Indonesia",
+    "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/WGFilm21.cs3",
     "name": "WGFilm21"
   }
