@@ -30,6 +30,21 @@
     "name": "Filmkita"
   },
   {
+    "iconUrl": "https://162.244.94.224/wp-content/uploads/2022/01/cropped-02B03F76-64AE-4D9C-8DE7-C4EE4DC115B2.jpeg",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 22088,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Filmlokal",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Filmlokal.cs3",
+    "name": "Filmlokal"
+  },
+  {
     "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -88,6 +103,21 @@
     "description": "📺 Streaming Jav Movie",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Javflix.cs3",
     "name": "Javflix"
+  },
+  {
+    "iconUrl": "https://jepangmantap.com/wp-content/uploads/2024/10/cropped-pavicon-1.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
+    "fileSize": 17089,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["Movie"],
+    "version": 1,
+    "internalName": "Javmoon",
+    "description": "📺 Streaming Jav Movie",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Javmoon.cs3",
+    "name": "Javmoon"
   },
   {
     "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
