@@ -90,36 +90,6 @@
     "name": "Indomax"
   },
   {
-    "iconUrl": "https://tv1.javplix.org/wp-content/uploads/2024/12/icon-javplix-grey.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
-    "fileSize": 18089,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["Movie"],
-    "version": 1,
-    "internalName": "Javflix",
-    "description": "📺 Streaming Jav Movie",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Javflix.cs3",
-    "name": "Javflix"
-  },
-  {
-    "iconUrl": "https://jepangmantap.com/wp-content/uploads/2024/10/cropped-pavicon-1.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://raw.githubusercontent.com/Asm0d3usX",
-    "fileSize": 17089,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["Movie"],
-    "version": 1,
-    "internalName": "Javmoon",
-    "description": "📺 Streaming Jav Movie",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Javmoon.cs3",
-    "name": "Javmoon"
-  },
-  {
     "iconUrl": "https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -298,21 +268,6 @@
     "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Savefilm.cs3",
     "name": "Savefilm"
-  },
-  {
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/10658/10658933.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 24081,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["Movie"],
-    "version": 1,
-    "internalName": "Unknown",
-    "description": "📺 Streaming Jav Movie",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Unknown.cs3",
-    "name": "Unknown"
   },
   {
     "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
