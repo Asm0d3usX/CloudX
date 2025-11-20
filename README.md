@@ -10,10 +10,10 @@
 | ------------- | ---------- | ---------- |
 | Dutamovie     | Indonesia  | 🔥 Active |
 | Filmkita      | Indonesia  | 🔥 Active |
+| Filmlokal     | Indonesia  | 🔥 Active |
 | Funmovieslix  | Indonesia  | 🔥 Active |
 | Idlix         | Indonesia  | 🔥 Active |
 | Indomax       | Indonesia  | 🔥 Active |
-| Javflix       | Indonesia  | 🔥 Active |
 | Kawanfilm     | Indonesia  | 🔥 Active |
 | LayarKaca     | Indonesia  | 🔥 Active |
 | LayarWarna    | Indonesia  | 🔥 Active |
@@ -25,7 +25,6 @@
 | PusatFilm     | Indonesia  | 🔥 Active |
 | Sarangfilm    | Indonesia  | 🔥 Active |
 | Savefilm      | Indonesia  | 🔥 Active |
-| Unknown       | Indonesia  | 🔥 Active |
 | WGFilm21      | Indonesia  | 🔥 Active |
 
 ---
