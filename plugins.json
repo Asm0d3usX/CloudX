@@ -15,7 +15,7 @@
     "name": "Dutamovie"
   },
   {
-    "iconUrl": "https://tv1.jinwar.org/wp-content/uploads/2025/08/cropped-lk21-1.png",
+    "iconUrl": "https://tv22.sbob.lol/wp-content/uploads/2025/08/cropped-lk21-1.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 22088,
@@ -30,7 +30,7 @@
     "name": "Filmkita"
   },
   {
-    "iconUrl": "https://162.244.94.224/wp-content/uploads/2022/01/cropped-02B03F76-64AE-4D9C-8DE7-C4EE4DC115B2.jpeg",
+    "iconUrl": "https://162.244.94.215/wp-content/uploads/2022/01/cropped-02B03F76-64AE-4D9C-8DE7-C4EE4DC115B2.jpeg",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 22088,
@@ -238,6 +238,21 @@
     "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatfilm.cs3",
     "name": "Pusatfilm"
+  },
+  {
+    "iconUrl": "https://helsinkiopen.com/wp-content/uploads/2023/10/favicon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21830,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Pusatmovie",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatmovie.cs3",
+    "name": "Pusatmovie"
   },
   {
     "iconUrl": "https://sarangfilm.fit/wp-content/uploads/2023/09/cropped-popcorn-2.png",
