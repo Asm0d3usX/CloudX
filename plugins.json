@@ -15,6 +15,21 @@
     "name": "Dutamovie"
   },
   {
+    "iconUrl": "https://klik.filem21.org/wp-content/uploads/2023/12/cropped-icon-film21.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21618,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Film21",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Film21.cs3",
+    "name": "Film21"
+  },
+  {
     "iconUrl": "https://tv22.sbob.lol/wp-content/uploads/2025/08/cropped-lk21-1.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
