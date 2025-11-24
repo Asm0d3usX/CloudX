@@ -23,6 +23,7 @@
 | Operaverdi    | Indonesia  | 🔥 Active |
 | PencuriMovie  | Indonesia  | 🔥 Active |
 | PusatFilm     | Indonesia  | 🔥 Active |
+| Pusatmovie    | Indonesia  | 🔥 Active |
 | Sarangfilm    | Indonesia  | 🔥 Active |
 | Savefilm      | Indonesia  | 🔥 Active |
 | WGFilm21      | Indonesia  | 🔥 Active |
