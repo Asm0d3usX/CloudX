@@ -150,6 +150,21 @@
     "name": "LayarWarna"
   },
   {
+    "iconUrl": "https://midasxxi.com/wp-content/uploads/2024/01/cropped-favicon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21789,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "MidasXXi",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/MidasXXi.cs3",
+    "name": "MidasXXi"
+  },
+  {
     "iconUrl": "https://movieboxapp.in/favicon.ico",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
