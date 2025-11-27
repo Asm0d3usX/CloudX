@@ -17,6 +17,7 @@
 | Kawanfilm     | Indonesia  | 🔥 Active |
 | LayarKaca     | Indonesia  | 🔥 Active |
 | LayarWarna    | Indonesia  | 🔥 Active |
+| MidasXXi      | Indonesia  | 🔥 Active |
 | Moviebox      | Indonesia  | 🔥 Active |
 | Ngefilm       | Indonesia  | 🔥 Active |
 | Nomat         | Indonesia  | 🔥 Active |
