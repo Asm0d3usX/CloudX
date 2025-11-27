@@ -9,10 +9,10 @@
 | Nama Ekstensi | Region | Status |
 | ------------- | ------- | ------- |
 | <img src="https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png" width="16"> Dutamovie | Indonesia | 🔥 Active |
-| <img src="https://tv22.sbob.lol/wp-content/uploads/2025/08/cropped-lk21-1.png" width="16"> Filmkita | Indonesia | 🔥 Active |
+| <img src="https://i.ibb.co.com/Jjzsxm9F/cropped-lk21-1.png" width="16"> Filmkita | Indonesia | 🔥 Active |
 | <img src="https://162.244.94.215/wp-content/uploads/2022/01/cropped-02B03F76-64AE-4D9C-8DE7-C4EE4DC115B2.jpeg" width="16"> Filmlokal | Indonesia | 🔥 Active |
 | <img src="https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png" width="16"> Funmovieslix | Indonesia | 🔥 Active |
-| <img src="https://tv10.idlixku.com/wp-content/uploads/2021/04/appicon.png" width="16"> Idlix | Indonesia | 🔥 Active |
+| <img src="https://i.ibb.co.com/DfTs2NjT/appicon.png" width="16"> Idlix | Indonesia | 🔥 Active |
 | <img src="https://movie21.indomax21.org/wp-content/uploads/2024/10/cropped-indomax21-favicon-color-1.png" width="16"> Indomax | Indonesia | 🔥 Active |
 | <img src="https://tv2.kawanfilm21.co/wp-content/uploads/2020/08/cropped-icon-baru-kawanfilm21-1-60x60.png" width="16"> Kawanfilm | Indonesia | 🔥 Active |
 | <img src="https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png" width="16"> KlikXXi | Indonesia | 🔥 Active |
