@@ -8,7 +8,7 @@
 
 | Nama Ekstensi | Region     | Status     |
 | ------------- | ---------- | ---------- |
-| Dutamovie     | Indonesia  | 🔥 Active |
+| <img src="https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png" width="16"/> Dutamovie     | Indonesia  | 🔥 Active |
 | Filmkita      | Indonesia  | 🔥 Active |
 | Filmlokal     | Indonesia  | 🔥 Active |
 | Funmovieslix  | Indonesia  | 🔥 Active |
