@@ -11,6 +11,7 @@
 | <img src="https://offshorebankservices.com/wp-content/uploads/2022/07/cropped-dutamovie21-512x512-1-60x60.png" width="16"> Dutamovie | Indonesia | 🔥 Active |
 | <img src="https://i.ibb.co.com/Jjzsxm9F/cropped-lk21-1.png" width="16"> Filmkita | Indonesia | 🔥 Active |
 | <img src="https://162.244.94.215/wp-content/uploads/2022/01/cropped-02B03F76-64AE-4D9C-8DE7-C4EE4DC115B2.jpeg" width="16"> Filmlokal | Indonesia | 🔥 Active |
+| <img src="https://fufafilm.cyou/wp-content/uploads/2025/11/cropped-Favicon.png" width="16"> Fufafilm | Indonesia | 🔥 Active |
 | <img src="https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png" width="16"> Funmovieslix | Indonesia | 🔥 Active |
 | <img src="https://i.ibb.co.com/DfTs2NjT/appicon.png" width="16"> Idlix | Indonesia | 🔥 Active |
 | <img src="https://movie21.indomax21.org/wp-content/uploads/2024/10/cropped-indomax21-favicon-color-1.png" width="16"> Indomax | Indonesia | 🔥 Active |
@@ -39,12 +40,14 @@
    Jika belum punya, download [DISINI](https://github.com/recloudstream/cloudstream/releases)  
 2. Masuk ke menu **"Ekstensi"**  
 3. Klik tombol **"Tambahkan Repositori"**  
-4. Masukkan URL repositori CloudX:  
-   - https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json  
+4. Masukkan URL repositori CloudX:
+   ```sh
+   https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json  
+   ```
    - Atau cukup klik [DISINI](https://shorturl.at/pxQ8q)  
-5. Klik **"Tambahkan"**  
-6. Ekstensi yang tersedia akan muncul di daftar  
-7. Pilih ekstensi yang ingin diinstal dan klik **"Instal"** ✅
+6. Klik **"Tambahkan"**  
+7. Ekstensi yang tersedia akan muncul di daftar  
+8. Pilih ekstensi yang ingin diinstal dan klik **"Instal"** ✅
 
 ---
 
