@@ -45,6 +45,21 @@
     "name": "Filmlokal"
   },
   {
+    "iconUrl": "https://fufafilm.cyou/wp-content/uploads/2025/11/cropped-Favicon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 21388,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "version": 1,
+    "internalName": "Fufafilm",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Fufafilm.cs3",
+    "name": "Fufafilm"
+  },
+  {
     "iconUrl": "https://funmovieslix.com/wp-content/uploads/2023/12/cropped-download.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
