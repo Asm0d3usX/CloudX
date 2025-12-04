@@ -38,9 +38,9 @@
 
 1. Buka aplikasi CloudStream.  
    Jika belum punya, download [DISINI](https://github.com/recloudstream/cloudstream/releases)  
-2. Masuk ke menu **"Ekstensi"**  
+2. Masuk ke menu **"Pengaturan"** > **"Ekstensi"**  
 3. Klik tombol **"Tambahkan Repositori"**  
-4. Masukkan URL repositori CloudX:
+4. Masukkan URL repositori CloudX :
    - https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json
    - Atau cukup klik [DISINI](https://shorturl.at/pxQ8q)  
 6. Klik **"Tambahkan"**  
