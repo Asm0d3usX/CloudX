@@ -34,19 +34,22 @@ class Nomat : MainAPI() {
     override val mainPage = mainPageOf(
 		"slug/film-terbaru/%d/" to "Terbaru",
 		"slug/film-box-office/%d/" to "Box Office",
-		"slug/film-serial-baru-terpopuler/%d/" to "Series",
+		"slug/film-serial-baru-terpopuler/%d/" to "TV Series",
 		"category/genre/action/%d/" to "Action",
-		"category/genre/romance/%d/" to "Romance",
 		"slug/film-movie-anime/%d/" to "Animation",
-		"category/country/japan/%d/" to "Japan"
+		"category/genre/history/%d/" to "History",
+		"category/genre/horror/%d/" to "Horror",
+		"category/genre/romance/%d/" to "Romance",
+		"category/country/japan/%d/" to "Japan",
+		"category/country/philippines/%d/" to "Philippines",
+		"category/country/thailand/%d/" to "Thailand"
 	)
 	
 	override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-		val url = "$mainUrl/${request.data.replace("%d", page.toString())}"
-		val doc = app.get(url).document
-		val items = doc.select("a:has(.item-content)").mapNotNull { it.toSearchResult() }
-		return newHomePageResponse(request.name, items)
-	}
+        val document = app.get("$mainUrl/${request.data.format(page)}").document
+        val items = document.select("a:has(.item-content)").mapNotNull { it.toSearchResult() }
+        return newHomePageResponse(request.name, items)
+    }
 	
 	private fun Element.toSearchResult(): SearchResponse? {
 		val href = this.attr("href")
@@ -63,10 +66,11 @@ class Nomat : MainAPI() {
 			?.groupValues?.getOrNull(1)?.toIntOrNull()
 		
 		return if (episode != null || title.contains("Season", true) || title.contains("Episode", true)) {
-			newTvSeriesSearchResponse(title, href, TvType.TvSeries) {
+			newAnimeSearchResponse(title, href, TvType.TvSeries) {
 				posterUrl = poster
 				addQuality(quality ?: "")
 				this.score = Score.from10(ratingText?.toDoubleOrNull())
+				if (episode != null) addSub(episode)
 			}
 		} else {
 			newMovieSearchResponse(title, href, TvType.Movie) {
@@ -83,13 +87,32 @@ class Nomat : MainAPI() {
     }    
 
     private fun Element.toRecommendResult(): SearchResponse? {
-		val href = fixUrl(this.attr("href"))
-		val title = this.selectFirst("div.title")?.text()?.trim() ?: return null
-		val style = this.selectFirst("div.poster")?.attr("style") ?: ""
-		val posterUrl = Regex("url\\(['\"]?(.*?)['\"]?\\)").find(style)?.groupValues?.get(1)
-
-		return newMovieSearchResponse(title, href, TvType.Movie) {
-			this.posterUrl = posterUrl
+		val href = this.attr("href")
+		if (href.isNullOrBlank()) return null
+		val title = this.selectFirst(".title")?.text()?.trim() ?: return null
+		val posterStyle = this.selectFirst(".poster")?.attr("style").orEmpty()
+		val poster = Regex("url\\('(.*?)'\\)").find(posterStyle)?.groupValues?.get(1)
+		val rating = this.selectFirst(".rtg")?.ownText()?.trim()
+		val quality = this.selectFirst("div.qual")?.text()?.trim()
+		val ratingText = selectFirst("div.rtg")?.ownText()?.trim()
+		val epsText = this.selectFirst("div.qual")?.text()?.trim()
+		val episode = Regex("Eps.?\\s?([0-9]+)", RegexOption.IGNORE_CASE)
+			.find(epsText ?: "")
+			?.groupValues?.getOrNull(1)?.toIntOrNull()
+		
+		return if (episode != null || title.contains("Season", true) || title.contains("Episode", true)) {
+			newAnimeSearchResponse(title, href, TvType.TvSeries) {
+				posterUrl = poster
+				addQuality(quality ?: "")
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+				if (episode != null) addSub(episode)
+			}
+		} else {
+			newMovieSearchResponse(title, href, TvType.Movie) {
+				posterUrl = poster
+				addQuality(quality ?: "")   
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+			}
 		}
 	}
 
@@ -113,21 +136,22 @@ class Nomat : MainAPI() {
 		val trailer = document.selectFirst("div.video-trailer iframe")?.attr("src")
 		val rating = document.selectFirst("div.rtg")?.text()?.trim()
 		val actors = document.select("div.video-actor a").map { it.text() }
-		val recommendations = document.select("div.section .item-content").mapNotNull { it.toRecommendResult() }
+		val recommendations = document.select("a:has(.item-content)").mapNotNull { it.toRecommendResult() }
 
 		val isSeries = url.contains("/serial-tv/") || document.select("div.video-episodes a").isNotEmpty()
 
 		return if (isSeries) {
 			val episodes = document.select("div.video-episodes a").map { eps ->
 				val href = fixUrl(eps.attr("href"))
-				val name = eps.text()
-				val episode = Regex("\\d+").find(name)?.value?.toIntOrNull()
+				val number = Regex("\\d+").find(eps.text())?.value?.toIntOrNull()
+				val name = number?.let { "Episode $it" } ?: "Episode"
 				val season = Regex("Season\\s?(\\d+)").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
 
 				newEpisode(href) {
 					this.name = name
-					this.episode = episode
+					this.episode = number
 					this.season = season
+					this.posterUrl = poster
 				}
 			}
 

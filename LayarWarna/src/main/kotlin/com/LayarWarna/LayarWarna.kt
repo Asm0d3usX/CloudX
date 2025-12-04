@@ -24,14 +24,16 @@ class LayarWarna : MainAPI() {
 
     override val mainPage = mainPageOf(
 		"genre/bioskopkeren/page/%d/" to "Box Office",
-		"drama/page/%d/" to "Drama",
-        "thriller/page/%d/" to "Thriller",
+		"action/page/%d/" to "Action",
 		"animation/page/%d/" to "Animation",
+		"comedy/page/%d/" to "Comedy",
+		"drama/page/%d/" to "Drama",
+		"romance/page/%d/" to "Romance",
+        "thriller/page/%d/" to "Thriller",
+		"war/page/%d/" to "War",
+		"country/china/page/%d/" to "China",
         "country/indonesia/page/%d/" to "Indonesia",
-        "country/china/page/%d/" to "China",
-        "country/philippines/page/%d/" to "Philippines",
-        "country/japan/page/%d/" to "Japan",
-        "uncategorized/page/%d/" to "Uncategorized"
+        "country/philippines/page/%d/" to "Philippines"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -45,13 +47,14 @@ class LayarWarna : MainAPI() {
 		val href = fixUrl(selectFirst("h2.entry-title > a")?.attr("href") ?: return null)
 		val poster = fixUrlNull(selectFirst("div.content-thumbnail img")?.getImageAttr())?.fixImageQuality()
 		val quality = selectFirst("div.gmr-quality-item a")?.text()?.trim()
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
 
 		return newMovieSearchResponse(title, href, TvType.Movie) {
 			this.posterUrl = poster
 			this.quality = getQualityFromString(quality)
+			this.score = Score.from10(ratingText?.toDoubleOrNull())
 		}
 	}
-
 
     override suspend fun search(query: String): List<SearchResponse> {
         val document = app.get("$mainUrl?s=$query&post_type[]=post&post_type[]=tv").document
@@ -59,10 +62,17 @@ class LayarWarna : MainAPI() {
     }
 
     private fun Element.toRecommendResult(): SearchResponse? {
-        val title = selectFirst("a > span.idmuvi-rp-title")?.text()?.trim() ?: return null
-        val href = selectFirst("a")?.attr("href") ?: return null
-        val poster = fixUrlNull(selectFirst("a > img")?.getImageAttr())?.fixImageQuality()
-        return newMovieSearchResponse(title, href, TvType.Movie) { posterUrl = poster }
+        val title = selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
+		val href = fixUrl(selectFirst("h2.entry-title > a")?.attr("href") ?: return null)
+		val poster = fixUrlNull(selectFirst("div.content-thumbnail img")?.getImageAttr())?.fixImageQuality()
+		val quality = selectFirst("div.gmr-quality-item a")?.text()?.trim()
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+
+		return newMovieSearchResponse(title, href, TvType.Movie) {
+			this.posterUrl = poster
+			this.quality = getQualityFromString(quality)
+			this.score = Score.from10(ratingText?.toDoubleOrNull())
+		}
     }
 	
 	override suspend fun load(url: String): LoadResponse {
@@ -70,7 +80,7 @@ class LayarWarna : MainAPI() {
 		val document = fetch.document
 		directUrl = getBaseUrl(fetch.url)
 
-		val title = document.selectFirst("h1.entry-title")?.text()?.trim().orEmpty()		
+		val title = document.selectFirst("h1.entry-title")?.text()?.trim().orEmpty()
 		val poster = fixUrlNull(document.selectFirst("div.gmr-movie-data figure img")?.getImageAttr()?.fixImageQuality())
 		val tags = document.select("div.gmr-moviedata a, div.gmr-movie-on a[rel='category tag']")
 			.map { it.text() }
@@ -85,7 +95,7 @@ class LayarWarna : MainAPI() {
 		val actors = document.select("span[itemprop=actors] a").map { it.text() }
 		val duration = document.selectFirst("span[property=duration], div.gmr-duration-item")
 			?.text()?.replace(Regex("\\D"), "")?.toIntOrNull()
-		val recommendations = document.select("article.item").mapNotNull { it.toSearchResult() }
+		val recommendations = document.select("article.item.col-md-20").mapNotNull { it.toRecommendResult() }
 
 		return newMovieLoadResponse(title, url, TvType.Movie, url) {
 			posterUrl = poster

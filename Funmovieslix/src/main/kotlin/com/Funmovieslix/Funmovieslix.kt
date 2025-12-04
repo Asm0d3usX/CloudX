@@ -19,19 +19,27 @@ class Funmovieslix : MainAPI() {
 	)
 
     override val mainPage = mainPageOf(
+		"latest-updates" to "Latest Update",
+		"best-rating" to "Best Rating",
         "category/action" to "Action",
         "category/science-fiction" to "Sci-Fi",
+		"category/comedy" to "Comedy",
+		"category/crime" to "Crime",
         "category/drama" to "Drama",
+		"category/fantasy" to "Fantasy",
         "category/kdrama" to "KDrama",
-        "category/crime" to "Crime",
-        "category/fantasy" to "Fantasy",
-        "category/mystery" to "Mystery",
-        "category/comedy" to "Comedy"
+		"category/mystery" to "Mystery",
+		"category/romance" to "Romance",
+		"category/thriller" to "Thriller"       
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         val document = app.get("$mainUrl/${request.data}/page/$page").document
-        val home = document.select("#gmr-main-load div.movie-card").mapNotNull { it.toSearchResult() }
+		val items = when (request.name) {
+			"Latest Update" -> document.select("#latest-wrap div.latest-card")
+			else -> document.select("#gmr-main-load div.movie-card")
+		}
+        val home = items.mapNotNull { it.toSearchResult() }
         return newHomePageResponse(
             list = HomePageList(
                 name = request.name,
@@ -59,9 +67,15 @@ class Funmovieslix : MainAPI() {
             fixUrlNull(bestUrl?.replace(Regex("-\\d+x\\d+"), ""))
         }
         val searchQuality = getSearchQuality(this)
-            val score=this.select("div.rating-stars").text().substringAfter("(").substringBefore(")")
+		val ratingText = this.selectFirst("div.rating-stars span")
+		?.ownText()
+		?.replace("(", "")
+		?.replace(")", "")
+		?.trim()
+
         return newMovieSearchResponse(title, href, TvType.Movie) {
             this.posterUrl = posterUrl
+			this.score = Score.from10(ratingText?.toDoubleOrNull())
             this.quality = searchQuality
         }
     }
@@ -116,6 +130,7 @@ class Funmovieslix : MainAPI() {
                             this.episode=ep
                             this.name=name
                             this.season=season
+							this.posterUrl = poster
                         }
                     )
             }

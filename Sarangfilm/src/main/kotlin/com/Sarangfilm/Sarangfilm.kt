@@ -9,7 +9,7 @@ import org.jsoup.nodes.Element
 import java.net.URI
 
 class Sarangfilm : MainAPI() {
-    override var mainUrl = "https://sarangfilm.fit"
+    override var mainUrl = "https://sarangfilm.world"
     override var name = "Sarangfilm"
     override val hasMainPage = true
     override var lang = "id"
@@ -23,15 +23,18 @@ class Sarangfilm : MainAPI() {
     private var directUrl: String? = null
 
     override val mainPage = mainPageOf(
-        "category/trending/page/%d/" to "Trending",
+		"category/trending/page/%d/" to "Trending",
         "tv/page/%d/" to "TV Series",
 		"category/action/page/%d/" to "Action",
 		"category/adventure/page/%d/" to "Adventure",
+		"category/comedy/page/%d/" to "Comedy",
+		"category/drama/page/%d/" to "Drama",
+		"category/fantasy/page/%d/" to "Fantasy",
 		"category/horror/page/%d/" to "Horror",
+		"category/thriller/page/%d/" to "Thriller",
 		"country/indonesia/page/%d/" to "Indonesia",
 		"country/thailand/page/%d/" to "Thailand",
 		"country/philippines/page/%d/" to "Philippines",
-		"category/film-semi/semi-jepang/page/%d/" to "Japan"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -43,19 +46,43 @@ class Sarangfilm : MainAPI() {
     private fun Element.toSearchResult(): SearchResponse? {
         val title = selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
         val href = fixUrl(selectFirst("h2.entry-title > a")?.attr("href") ?: return null)
-        val poster = fixUrlNull(selectFirst("div.content-thumbnail img")?.getImageAttr()?.fixImageQuality())
+        val imgEl = selectFirst("div.content-thumbnail img")
+		val posterRaw =
+			imgEl?.attr("data-srcset")
+				?.split(",")
+				?.map { it.trim() }
+				?.maxByOrNull { it.substringAfterLast(" ").removeSuffix("w").toIntOrNull() ?: 0 }
+				?.split(" ")
+				?.firstOrNull()
+				?: imgEl?.attr("srcset")
+					?.split(",")
+					?.map { it.trim() }
+					?.maxByOrNull { it.substringAfterLast(" ").removeSuffix("w").toIntOrNull() ?: 0 }
+					?.split(" ")
+					?.firstOrNull()
+				?: imgEl?.getImageAttr()
+				?: imgEl?.attr("src")
+
+		val poster = fixUrlNull(posterRaw)
         val quality = select("div.gmr-quality-item > a, div.gmr-qual > a").text().trim().replace("-", "")
         val episodes = select("div.gmr-numbeps > span").text().toIntOrNull() ?: 0
         val postType = selectFirst("div.gmr-posttype-item")?.text()?.trim()?.lowercase() ?: "movie"
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
 
         return if (postType.contains("tv")) {
             newAnimeSearchResponse(title, href, TvType.TvSeries) {
                 posterUrl = poster
+				if (quality.isNotEmpty()){
+					addQuality(quality)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
                 if (episodes > 0) addSub(episodes)
             }
         } else {
             newMovieSearchResponse(title, href, TvType.Movie) {
                 posterUrl = poster
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
                 if (quality.isNotEmpty()) addQuality(quality)
             }
         }
@@ -70,12 +97,27 @@ class Sarangfilm : MainAPI() {
         val title = selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
         val href = fixUrl(selectFirst("h2.entry-title > a")?.attr("href") ?: return null)
         val poster = fixUrlNull(selectFirst("div.content-thumbnail img")?.getImageAttr()?.fixImageQuality())
+        val quality = select("div.gmr-quality-item > a, div.gmr-qual > a").text().trim().replace("-", "")
+        val episodes = select("div.gmr-numbeps > span").text().toIntOrNull() ?: 0
         val postType = selectFirst("div.gmr-posttype-item")?.text()?.trim()?.lowercase() ?: "movie"
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
 
         return if (postType.contains("tv")) {
-            newAnimeSearchResponse(title, href, TvType.TvSeries) { posterUrl = poster }
+            newAnimeSearchResponse(title, href, TvType.TvSeries) {
+                posterUrl = poster
+				if (quality.isNotEmpty()){
+					addQuality(quality)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
+                if (episodes > 0) addSub(episodes)
+            }
         } else {
-            newMovieSearchResponse(title, href, TvType.Movie) { posterUrl = poster }
+            newMovieSearchResponse(title, href, TvType.Movie) {
+                posterUrl = poster
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+                if (quality.isNotEmpty()) addQuality(quality)
+            }
         }
     }
 
@@ -86,10 +128,24 @@ class Sarangfilm : MainAPI() {
 
         val title = document.selectFirst("h1.entry-title")?.text()
             ?.substringBefore("Season")?.substringBefore("Episode")?.trim().orEmpty()
+		val imgEl = document.selectFirst("div.gmr-movie-data figure img")
+		val posterRaw =
+			imgEl?.attr("data-srcset")
+				?.split(",")
+				?.map { it.trim() }
+				?.maxByOrNull { it.substringAfterLast(" ").removeSuffix("w").toIntOrNull() ?: 0 }
+				?.split(" ")
+				?.firstOrNull()
+				?: imgEl?.attr("srcset")
+					?.split(",")
+					?.map { it.trim() }
+					?.maxByOrNull { it.substringAfterLast(" ").removeSuffix("w").toIntOrNull() ?: 0 }
+					?.split(" ")
+					?.firstOrNull()
+				?: imgEl?.getImageAttr()
+				?: imgEl?.attr("src")
 
-		val poster = fixUrlNull(document.selectFirst("div.gmr-movie-data figure img")?.getImageAttr()?.fixImageQuality())
-
-
+		val poster = fixUrlNull(posterRaw)
         val tags = document.select("div.gmr-moviedata a").map { it.text() }
         val year = document.select("div.gmr-moviedata strong:contains(Year:) > a")
             .text().trim().toIntOrNull()
@@ -100,21 +156,24 @@ class Sarangfilm : MainAPI() {
         val rating = document.selectFirst("div.gmr-meta-rating span[itemprop=ratingValue]")?.text()?.trim()
         val actors = document.select("div.gmr-moviedata span[itemprop=actors] a").map { it.text() }
         val duration = document.selectFirst("div.gmr-moviedata span[property=duration]")?.text()?.replace(Regex("\\D"), "")?.toIntOrNull()
-        val recommendations = document.select("div.idmuvi-rp ul li").mapNotNull { it.toRecommendResult() }
+        val recommendations = document.select("article.item.col-md-20").mapNotNull { it.toRecommendResult() }
 
         return if (tvType == TvType.TvSeries) {
             val episodes = document.select("div.vid-episodes a, div.gmr-listseries a")
-                .mapNotNull { eps ->
-                    val href = fixUrl(eps.attr("href"))
-                    val name = eps.text()
-                    val episode = name.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
-                    val season = name.split(" ").firstOrNull()?.filter { it.isDigit() }?.toIntOrNull()
-                    newEpisode(href) {
-                        this.name = name
-                        this.episode = episode
-                        this.season = if (name.contains(" ")) season else null
-                    }
-                }.filter { it.episode != null }
+			.mapNotNull { eps ->
+				val href = fixUrl(eps.attr("href"))
+				val name = eps.text()
+				val episode = name.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
+				val season = name.split(" ").firstOrNull()?.filter { it.isDigit() }?.toIntOrNull()
+				if (episode == null) return@mapNotNull null
+
+				newEpisode(href) {
+					this.name = "Episode $episode"
+					this.episode = episode
+					this.season = season
+					this.posterUrl = poster
+				}
+			}
 
             newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
                 posterUrl = poster

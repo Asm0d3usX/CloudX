@@ -23,13 +23,16 @@ class LayarKaca : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "$mainUrl/populer/page/" to "Film Terpopuler",
-        "$mainUrl/rating/page/" to "Berdasarkan IMDb Rating",
-        "$mainUrl/most-commented/page/" to "Film dengan Komentar Terbanyak",
-        "$seriesUrl/latest-series/page/" to "Series Terbaru",
-        "$seriesUrl/series/asian/page/" to "Film Asian Terbaru",
-        "$mainUrl/latest/page/" to "Film Upload Terbaru",
-        "$mainUrl/genre/animation/page/" to "Animation",
+		"$mainUrl/latest/page/" to "Terbaru",
+        "$mainUrl/populer/page/" to "Popular",
+        "$mainUrl/rating/page/" to "Best Rating",
+        "$mainUrl/most-commented/page/" to "Best Comment",
+        "$seriesUrl/latest-series/page/" to "TV Series",
+        "$seriesUrl/series/asian/page/" to "Series Asia",
+		"$mainUrl/genre/action/page/" to "Action",
+		"$mainUrl/genre/animation/page/" to "Animation",
+		"$mainUrl/genre/comedy/page/" to "Comedy",
+		"$mainUrl/genre/horror/page/" to "Horror",
         "$mainUrl/country/thailand/page/" to "Thailand",
         "$mainUrl/country/philippines/page/" to "Philippines"
     )
@@ -61,6 +64,8 @@ class LayarKaca : MainAPI() {
         val title = this.selectFirst("h3")?.ownText()?.trim() ?: return null
         val href = fixUrl(this.selectFirst("a")!!.attr("href"))
         val posterUrl = fixUrlNull(this.selectFirst("img")?.getImageAttr())
+		val ratingText = this.selectFirst("span[itemprop=ratingValue]")?.ownText()?.trim()
+		val quality = this.selectFirst("span.label")?.text()?.trim()
         val type = if (this.selectFirst("span.episode") == null) TvType.Movie else TvType.TvSeries
         val posterheaders = mapOf("Referer" to getBaseUrl(posterUrl))
 
@@ -72,11 +77,11 @@ class LayarKaca : MainAPI() {
                 addSub(episode)
             }
         } else {
-            val quality = this.select("div.quality").text().trim()
             newMovieSearchResponse(title, href, TvType.Movie) {
                 this.posterUrl = posterUrl
                 this.posterHeaders = posterheaders
-                addQuality(quality)
+                this.quality = getQualityFromString(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
             }
         }
     }
@@ -162,6 +167,7 @@ class LayarKaca : MainAPI() {
                                 this.name = "Episode $episodeNo"
                                 this.season = seasonNo
                                 this.episode = episodeNo
+								this.posterUrl = poster
                             }
                         )
                     }

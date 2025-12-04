@@ -7,6 +7,7 @@ import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
 import com.lagradost.cloudstream3.LoadResponse.Companion.addScore
 import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
 import com.lagradost.cloudstream3.utils.*
+import java.net.URI
 
 class Pencurimovie : MainAPI() {
 
@@ -48,11 +49,23 @@ class Pencurimovie : MainAPI() {
         val title = this.select("a").attr("oldtitle").substringBefore("(")
         val href = fixUrl(this.select("a").attr("href"))
         val posterUrl = fixUrlNull(this.select("a img").attr("data-original").toString())
-        val quality = getQualityFromString(this.select("span.mli-quality").text())
-        return newMovieSearchResponse(title, href, TvType.Movie) {
-            this.posterUrl = posterUrl
-            this.quality = quality
-        }
+		val qualityString = this.selectFirst("span.mli-quality")?.text()?.trim() ?: ""
+		val quality = this.selectFirst("span.mli-quality, div.jtip-quality")?.text()?.trim()?.replace("-", "")?: ""
+		val epsCount = this.selectFirst("span.mli-eps i")?.text()?.trim()?.toIntOrNull()
+		val isSeries = epsCount != null || selectFirst("span.mli-eps") != null
+		
+		return if (isSeries) {
+			newAnimeSearchResponse(title, href, TvType.TvSeries) {
+				this.posterUrl = posterUrl
+				addQuality(quality)
+				if (epsCount != null) addSub(epsCount)
+			}
+		} else {
+			newMovieSearchResponse(title, href, TvType.Movie) {
+				this.posterUrl = posterUrl
+				addQuality(quality)
+			}
+		}
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
@@ -88,6 +101,7 @@ class Pencurimovie : MainAPI() {
                             this.episode = Rawepisode
                             this.name = name
                             this.season = season
+							this.posterUrl = poster
                         }
                     )
                 }
@@ -129,8 +143,28 @@ class Pencurimovie : MainAPI() {
         val document = app.get(data).document
         document.select("div.movieplay iframe").forEach {
             val href = it.attr("data-src")
-            loadExtractor(href, subtitleCallback, callback)
+			val finalUrl = followRedirect(href)
+            loadExtractor(finalUrl, subtitleCallback, callback)
         }
         return true
     }
+	
+	suspend fun followRedirect(url: String): String {
+		return try {
+			val resp = app.get(url, allowRedirects = false)
+			val loc = resp.headers["Location"]
+			if (!loc.isNullOrBlank()) {
+				return if (loc.startsWith("http")) loc else url + loc
+			}
+			val doc = resp.document
+			val meta = doc.selectFirst("meta[http-equiv~=(?i)refresh]")?.attr("content")
+			if (!meta.isNullOrBlank()) {
+				val u = meta.substringAfter("URL=", "").trim()
+				if (u.isNotEmpty()) return if (u.startsWith("http")) u else url + u
+			}
+			url
+		} catch (_: Exception) {
+			url
+		}
+	}
 }

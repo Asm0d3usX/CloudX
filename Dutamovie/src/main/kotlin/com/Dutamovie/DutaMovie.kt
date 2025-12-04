@@ -10,6 +10,7 @@ import java.net.URI
 
 class DutaMovie : MainAPI() {
     override var mainUrl = "https://offshorebankservices.com"
+	private var directUrl: String? = null
     override var name = "Dutamovie"
     override val hasMainPage = true
     override var lang = "id"
@@ -20,18 +21,26 @@ class DutaMovie : MainAPI() {
         TvType.AsianDrama
     )
 
-    private var directUrl: String? = null
-
     override val mainPage = mainPageOf(
         "category/box-office/page/%d/" to "Box Office",
-        "category/serial-tv/page/%d/" to "Serial TV",
-        "category/animation/page/%d/" to "Animasi",
-        "country/korea/page/%d/" to "Korea",
-        "country/indonesia/page/%d/" to "Indonesia",
-        "country/philippines/page/%d/" to "Philippines",
-        "country/thailand/page/%d/" to "Thailand",
-        "vivamax-sub-indo/page/%d/" to "Vivamax",
-        "nonton-semi-korea/page/%d/" to "Semi Korea"
+        "category/serial-tv/page/%d/" to "TV Series",
+		"action/page/%d/" to "Action",
+		"adventure/page/%d/" to "Adventure",
+		"animation/page/%d/" to "Animation",
+		"comedy/page/%d/" to "Comedy",
+		"crime/page/%d/" to "Crime",
+		"drama/page/%d/" to "Drama",
+		"fantasy/page/%d/" to "Fantasy",
+		"horror/page/%d/" to "Horror",
+		"mystery/page/%d/" to "Mystery",
+		"romance/page/%d/" to "Romance",
+		"science-fiction/page/%d/" to "Sci-Fi",
+		"thriller/page/%d/" to "Thriller",
+		"country/china/page/%d/" to "China",
+		"country/indonesia/page/%d/" to "Indonesia",
+		"country/korea/page/%d/" to "Korea",
+		"country/philippines/page/%d/" to "Philippines",
+        "country/thailand/page/%d/" to "Thailand"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -46,6 +55,7 @@ class DutaMovie : MainAPI() {
         val poster = fixUrlNull(selectFirst("a > img")?.getImageAttr())?.fixImageQuality()
         val quality = select("div.gmr-qual, div.gmr-quality-item > a")
             .text().trim().replace("-", "")
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
 
         return if (quality.isEmpty()) {
             val episode = Regex("Episode\\s?([0-9]+)").find(title)
@@ -60,21 +70,40 @@ class DutaMovie : MainAPI() {
             newMovieSearchResponse(title, href, TvType.Movie) {
                 posterUrl = poster
                 addQuality(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
             }
         }
     }
-
-    override suspend fun search(query: String): List<SearchResponse> {
+	
+	override suspend fun search(query: String): List<SearchResponse> {
         val document = app.get("$mainUrl?s=$query&post_type[]=post&post_type[]=tv").document
-        return document.select("article.item").mapNotNull { it.toSearchResult() }
+        return document.select("article.item-infinite").mapNotNull { it.toSearchResult() }
     }
+	
+	private fun Element.toRecommendResult(): SearchResponse? {
+		val title = selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
+		val href = selectFirst("h2.entry-title > a")?.attr("href") ?: return null
+		val poster = fixUrlNull(selectFirst("div.content-thumbnail img")?.attr("src"))?.fixImageQuality()
+		val quality = select("div.gmr-qual, div.gmr-quality-item > a")
+            .text().trim().replace("-", "")
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+		return if (quality.isEmpty()) {
+            val episode = Regex("Episode\\s?([0-9]+)").find(title)
+                ?.groupValues?.getOrNull(1)?.toIntOrNull()
+                ?: select("div.gmr-numbeps > span").text().toIntOrNull()
 
-    private fun Element.toRecommendResult(): SearchResponse? {
-        val title = selectFirst("a > span.idmuvi-rp-title")?.text()?.trim() ?: return null
-        val href = selectFirst("a")?.attr("href") ?: return null
-        val poster = fixUrlNull(selectFirst("a > img")?.getImageAttr())?.fixImageQuality()
-        return newMovieSearchResponse(title, href, TvType.Movie) { posterUrl = poster }
-    }
+            newAnimeSearchResponse(title, href, TvType.TvSeries) {
+                posterUrl = poster
+                addSub(episode)
+            }
+        } else {
+            newMovieSearchResponse(title, href, TvType.Movie) {
+                posterUrl = poster
+                addQuality(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+            }
+        }
+	}
 
     override suspend fun load(url: String): LoadResponse {
         val fetch = app.get(url)
@@ -98,22 +127,25 @@ class DutaMovie : MainAPI() {
             ?.select("span[itemprop=actors] a")?.map { it.text() }
         val duration = document.selectFirst("div.gmr-moviedata span[property=duration]")
             ?.text()?.replace(Regex("\\D"), "")?.toIntOrNull()
-        val recommendations = document.select("div.idmuvi-rp ul li")
-            .mapNotNull { it.toRecommendResult() }
+        val recommendations = document.select("article.item.col-md-20").mapNotNull { it.toRecommendResult() }
+        return if (tvType == TvType.TvSeries) {				
+			val episodes = document.select("div.vid-episodes a, div.gmr-listseries a")
+				.mapNotNull { eps ->
+					val href = fixUrl(eps.attr("href"))
+					val rawTitle = eps.attr("title").takeIf { it.isNotBlank() } ?: eps.text()
+					val cleanTitle = rawTitle.replaceFirst(Regex("(?i)Permalink to\\s*"), "").trim()
 
-        return if (tvType == TvType.TvSeries) {
-            val episodes = document.select("div.vid-episodes a, div.gmr-listseries a")
-                .mapNotNull { eps ->
-                    val href = fixUrl(eps.attr("href"))
-                    val name = eps.text()
-                    val episode = name.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
-                    val season = name.split(" ").firstOrNull()?.filter { it.isDigit() }?.toIntOrNull()
-                    newEpisode(href) {
-                        this.name = name
-                        this.episode = episode
-                        this.season = if (name.contains(" ")) season else null
-                    }
-                }.filter { it.episode != null }
+					val epNum = Regex("Episode\\s*(\\d+)").find(cleanTitle)?.groupValues?.getOrNull(1)?.toIntOrNull()
+						?: cleanTitle.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
+
+					val formattedName = epNum?.let { "Episode $it" } ?: cleanTitle
+
+					newEpisode(href) {
+						this.name = formattedName
+						this.episode = epNum
+						this.posterUrl = poster
+					}
+				}.filter { it.episode != null }
 
             newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
                 posterUrl = poster

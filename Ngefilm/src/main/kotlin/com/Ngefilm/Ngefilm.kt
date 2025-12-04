@@ -16,7 +16,7 @@ import org.jsoup.nodes.Element
 
 class Ngefilm : MainAPI() {
 
-    override var mainUrl = "https://new24.ngefilm.site"
+    override var mainUrl = "https://new28.ngefilm.site"
     private var directUrl: String? = null
     override var name = "Ngefilm"
     override val hasMainPage = true
@@ -29,21 +29,22 @@ class Ngefilm : MainAPI() {
 	)
 
     override val mainPage = mainPageOf(
+		"year/2025/page/%d/" to "Terbaru",
+		"page/%d/?s=&search=advanced&post_type=tv" to "TV Series",
 		"Genre/action/page/%d/" to "Action",
 		"Genre/adventure/page/%d/" to "Adventure",
-		"Genre/fantasy/page/%d/" to "Fantasy",
 		"Genre/animation/page/%d/" to "Animation",
-		"country/indonesia/page/%d/" to "Indonesia",
+		"Genre/fantasy/page/%d/" to "Fantasy",
 		"country/japan/page/%d/" to "Japan",
-		"country/philippines/page/%d/" to "Philippines",
+		"country/indonesia/page/%d/" to "Indonesia",
+		"country/philippines/page/%d/" to "Philippines"
     )
-
-    override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-		val data = request.data.format(page)
-		val document = app.get("$mainUrl/$data").document
-		val home = document.select("article.item").mapNotNull { it.toSearchResult() }
-		return newHomePageResponse(request.name, home)
-	}
+	
+	override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
+        val document = app.get("$mainUrl/${request.data.format(page)}").document
+        val items = document.select("article.item-infinite").mapNotNull { it.toSearchResult() }
+        return newHomePageResponse(request.name, items)
+    }
 
 	private fun Element.toSearchResult(): SearchResponse? {
 		val title = this.selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
@@ -51,18 +52,17 @@ class Ngefilm : MainAPI() {
 		val posterUrl = fixUrlNull(this.selectFirst("a > img")?.getImageAttr()).fixImageQuality()
 		val quality = this.select("div.gmr-qual, div.gmr-quality-item > a").text().trim().replace("-", "")
 		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+		val eps = selectFirst(".gmr-numbeps span")?.text()?.trim()?.toIntOrNull()
+		val isSeries = eps != null
 
-		return if (quality.isEmpty()) {
-			val episode = Regex("Episode\\s?([0-9]+)")
-				.find(title)
-				?.groupValues?.getOrNull(1)
-				?.toIntOrNull()
-				?: this.select("div.gmr-numbeps > span").text().toIntOrNull()
-
+		return if (isSeries) {
 			newAnimeSearchResponse(title, href, TvType.TvSeries) {
 				this.posterUrl = posterUrl
-				addSub(episode)
-				this.score = Score.from10(ratingText?.toDoubleOrNull())
+				if (eps !=null){
+					addSub(eps)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
 			}
 		} else {
 			newMovieSearchResponse(title, href, TvType.Movie) {
@@ -74,16 +74,35 @@ class Ngefilm : MainAPI() {
 	}    
 
     override suspend fun search(query: String): List<SearchResponse> {
-		val document = app.get("$mainUrl/?s=$query&post_type[]=post&post_type[]=tv", timeout = 50L).document
-		val results = document.select("article.has-post-thumbnail").mapNotNull { it.toSearchResult() }
-		return results
-	}
+        val document = app.get("$mainUrl?s=$query&post_type[]=post&post_type[]=tv").document
+        return document.select("article.item-infinite").mapNotNull { it.toSearchResult() }
+    }
 
     private fun Element.toRecommendResult(): SearchResponse? {
-        val title = this.selectFirst("a > span.idmuvi-rp-title")?.text()?.trim() ?: return null
-        val href = this.selectFirst("a")!!.attr("href")
-        val posterUrl = fixUrlNull(this.selectFirst("div.content-thumbnail a > img")?.getImageAttr()).fixImageQuality()
-        return newMovieSearchResponse(title, href, TvType.Movie) { this.posterUrl = posterUrl }
+        val title = this.selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
+		val href = fixUrl(this.selectFirst("a")!!.attr("href"))
+		val posterUrl = fixUrlNull(this.selectFirst("a > img")?.getImageAttr()).fixImageQuality()
+		val quality = this.select("div.gmr-qual, div.gmr-quality-item > a").text().trim().replace("-", "")
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+		val eps = selectFirst(".gmr-numbeps span")?.text()?.trim()?.toIntOrNull()
+		val isSeries = eps != null
+
+		return if (isSeries) {
+			newAnimeSearchResponse(title, href, TvType.TvSeries) {
+				this.posterUrl = posterUrl
+				if (eps !=null){
+					addSub(eps)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
+			}
+		} else {
+			newMovieSearchResponse(title, href, TvType.Movie) {
+				this.posterUrl = posterUrl
+				addQuality(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+			}
+		}
     }
 
     override suspend fun load(url: String): LoadResponse {
@@ -107,23 +126,26 @@ class Ngefilm : MainAPI() {
 			?.map { it.select("a").text() }
 		val duration = document.selectFirst("div.gmr-moviedata span[property=duration]")?.text()
 			?.replace(Regex("\\D"), "")?.toIntOrNull()
-		val recommendations = document.select("div.idmuvi-rp ul li")
-			.mapNotNull { it.toRecommendResult() }
+		val recommendations = document.select("article.item.col-md-20").mapNotNull { it.toRecommendResult() }
 
 		return if (tvType == TvType.TvSeries) {
 			val episodes = document.select("div.vid-episodes a, div.gmr-listseries a")
-				.map { eps ->
+				.mapNotNull { eps ->
 					val href = fixUrl(eps.attr("href"))
-					val name = eps.text()
-					val episode = name.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
-					val season = name.split(" ").firstOrNull()?.filter { it.isDigit() }?.toIntOrNull()
+					val rawTitle = eps.attr("title").takeIf { it.isNotBlank() } ?: eps.text()
+					val cleanTitle = rawTitle.replaceFirst(Regex("(?i)Permalink ke\\s*"), "").trim()
+
+					val epNum = Regex("Episode\\s*(\\d+)").find(cleanTitle)?.groupValues?.getOrNull(1)?.toIntOrNull()
+						?: cleanTitle.split(" ").lastOrNull()?.filter { it.isDigit() }?.toIntOrNull()
+
+					val formattedName = epNum?.let { "Episode $it" } ?: cleanTitle
+
 					newEpisode(href) {
-						this.name = name
-						this.episode = episode
-						this.season = if (name.contains(" ")) season else null
+						this.name = formattedName
+						this.episode = epNum
+						this.posterUrl = poster
 					}
-				}
-				.filter { it.episode != null }
+				}.filter { it.episode != null }
 
 			newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
 				this.posterUrl = poster

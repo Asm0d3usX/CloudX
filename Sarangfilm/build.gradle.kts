@@ -1,7 +1,7 @@
 version = 1
 
 cloudstream {
-    description = "Sarangfilm adalah plugin untuk streaming film dan serial."
+    description = "Sarangfilm - Streaming Movie and TV Series"
     language = "id"
     authors = listOf("Asm0d3usX")
     status = 1

@@ -26,12 +26,16 @@ class Kawanfilm : MainAPI() {
     override val mainPage = mainPageOf(
         "/page/%d/?s&search=advanced&post_type=movie&index&orderby&genre&movieyear&country&quality=" to "Update Terbaru",
         "category/box-office/page/%d/" to "Box Office",
-        "tv/page/%d/" to "Serial TV",
-        "country/thailand/page/%d/" to "Thailand",
-        "country/philippines/page/%d/" to "Philippines",
-        "/page/%d/?s=&search=advanced&post_type=&index=&orderby=&genre=drama&movieyear=&country=korea&quality=" to "Drama Korea",
-        "country/usa/page/%d/" to "Hollywood",
-        "country/india/page/%d/" to "Bollywood"
+		"category/action/page/%d/" to "Action",
+		"category/animation/page/%d/" to "Animation",
+		"category/comedy/page/%d/" to "Comedy",
+		"category/drama/page/%d/" to "Drama",
+		"category/horror/page/%d/" to "Horror",
+		"category/war/page/%d/" to "War",
+		"country/china/page/%d/" to "China",
+		"country/japan/page/%d/" to "Japan",
+		"country/philippines/page/%d/" to "Philippines",
+        "country/thailand/page/%d/" to "Thailand"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -46,17 +50,25 @@ class Kawanfilm : MainAPI() {
         val href = fixUrl(this.selectFirst("a")!!.attr("href"))
         val posterUrl = fixUrlNull(this.selectFirst("a > img")?.getImageAttr()).fixImageQuality()
         val quality = this.select("div.gmr-qual, div.gmr-quality-item > a").text().trim().replace("-", "")
-        return if (quality.isEmpty()) {
-            val episode = Regex("Episode\\s?([0-9]+)").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
-                ?: this.select("div.gmr-numbeps > span").text().toIntOrNull()
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+		val eps = selectFirst(".gmr-numbeps span")?.text()?.trim()?.toIntOrNull()
+		val isSeries = eps != null
+		
+        return if (isSeries) {
             newAnimeSearchResponse(title, href, TvType.TvSeries) {
                 this.posterUrl = posterUrl
-                addSub(episode)
+                if (eps !=null){
+					addSub(eps)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
+				addQuality(quality)
             }
         } else {
             newMovieSearchResponse(title, href, TvType.Movie) {
                 this.posterUrl = posterUrl
                 addQuality(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
             }
         }
     }
@@ -67,10 +79,31 @@ class Kawanfilm : MainAPI() {
     }
 
     private fun Element.toRecommendResult(): SearchResponse? {
-        val title = this.selectFirst("a > span.idmuvi-rp-title")?.text()?.trim() ?: return null
-        val href = this.selectFirst("a")!!.attr("href")
-        val posterUrl = fixUrlNull(this.selectFirst("a > img")?.getImageAttr().fixImageQuality())
-        return newMovieSearchResponse(title, href, TvType.Movie) { this.posterUrl = posterUrl }
+        val title = this.selectFirst("h2.entry-title > a")?.text()?.trim() ?: return null
+        val href = fixUrl(this.selectFirst("a")!!.attr("href"))
+        val posterUrl = fixUrlNull(this.selectFirst("a > img")?.getImageAttr()).fixImageQuality()
+        val quality = this.select("div.gmr-qual, div.gmr-quality-item > a").text().trim().replace("-", "")
+		val ratingText = this.selectFirst("div.gmr-rating-item")?.ownText()?.trim()
+		val eps = selectFirst(".gmr-numbeps span")?.text()?.trim()?.toIntOrNull()
+		val isSeries = eps != null
+		
+        return if (isSeries) {
+            newAnimeSearchResponse(title, href, TvType.TvSeries) {
+                this.posterUrl = posterUrl
+                if (eps !=null){
+					addSub(eps)
+				} else {
+					this.score = Score.from10(ratingText?.toDoubleOrNull())
+				}
+				addQuality(quality)
+            }
+        } else {
+            newMovieSearchResponse(title, href, TvType.Movie) {
+                this.posterUrl = posterUrl
+                addQuality(quality)
+				this.score = Score.from10(ratingText?.toDoubleOrNull())
+            }
+        }
     }
 
     override suspend fun load(url: String): LoadResponse {
@@ -88,7 +121,7 @@ class Kawanfilm : MainAPI() {
         val rating = document.selectFirst("div.gmr-meta-rating > span[itemprop=ratingValue]")?.text()?.trim()
         val actors = document.select("div.gmr-moviedata").last()?.select("span[itemprop=actors]")?.map { it.select("a").text() }
         val duration = document.selectFirst("div.gmr-moviedata span[property=duration]")?.text()?.replace(Regex("\\D"), "")?.toIntOrNull()
-        val recommendations = document.select("div.idmuvi-rp ul li").mapNotNull { it.toRecommendResult() }
+        val recommendations = document.select("article.item.col-md-20").mapNotNull { it.toRecommendResult() }
 
         return if (tvType == TvType.TvSeries) {
             val episodes = document.select("div.vid-episodes a, div.gmr-listseries a").map { eps ->
@@ -102,6 +135,7 @@ class Kawanfilm : MainAPI() {
                     this.season = if (name.contains(" ")) season else null
                 }
             }.filter { it.episode != null }
+			
             newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
                 this.posterUrl = poster
                 this.year = year
