@@ -29,6 +29,7 @@
 | <img src="https://helsinkiopen.com/wp-content/uploads/2023/10/favicon.png" width="16"> Pusatmovie | Indonesia | 🔥 Active |
 | <img src="https://sarangfilm.fit/wp-content/uploads/2023/09/cropped-popcorn-2.png" width="16"> Sarangfilm | Indonesia | 🔥 Active |
 | <img src="https://savefilm21.info/favicon.png" width="16"> Savefilm | Indonesia | 🔥 Active |
+| <img src="http://sflix.film/favicon.ico" width="16"> Sflix | Indonesia | 🔥 Active |
 | <img src="https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp" width="16"> WGFilm21 | Indonesia | 🔥 Active |
 
 
