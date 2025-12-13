@@ -15,7 +15,7 @@
     "name": "Dutamovie"
   },
   {
-    "iconUrl": "https://tv22.sbob.lol/wp-content/uploads/2025/08/cropped-lk21-1.png",
+    "iconUrl": "https://caragampangjp.store/wp-content/uploads/2025/08/cropped-lk21-1.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 22088,
@@ -45,7 +45,7 @@
     "name": "Filmlokal"
   },
   {
-    "iconUrl": "https://fufafilm.cyou/wp-content/uploads/2025/11/cropped-Favicon.png",
+    "iconUrl": "https://fufafilm.com/wp-content/uploads/2025/11/cropped-Favicon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 21388,
@@ -183,7 +183,7 @@
     "iconUrl": "https://movieboxapp.in/favicon.ico",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 27327,
+    "fileSize": 34677,
     "status": 1,
     "language": "id",
     "authors": ["Hexated", "Asm0d3usX"],
@@ -261,7 +261,7 @@
     "fileSize": 17060,
     "status": 1,
     "language": "id",
-    "authors": ["Hexated", "Asm0d3usX"],
+    "authors": ["Asm0d3usX"],
     "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
     "version": 1,
     "internalName": "Pusatfilm",
@@ -270,7 +270,7 @@
     "name": "Pusatfilm"
   },
   {
-    "iconUrl": "https://helsinkiopen.com/wp-content/uploads/2023/10/favicon.png",
+    "iconUrl": "https://karachiradio.com/wp-content/uploads/2023/10/favicon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
     "fileSize": 21830,
@@ -313,6 +313,21 @@
     "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Savefilm.cs3",
     "name": "Savefilm"
+  },
+  {
+    "iconUrl": "http://sflix.film/favicon.ico",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+    "fileSize": 34915,
+    "status": 1,
+    "language": "id",
+    "authors": ["Asm0d3usX"],
+    "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
+    "version": 1,
+    "internalName": "Sflix",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Sflix.cs3",
+    "name": "Sflix"
   },
   {
     "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
