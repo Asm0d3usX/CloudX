@@ -21,6 +21,7 @@
 | <img src="https://play5.layarwarna21.tv/wp-content/uploads/2023/06/cropped-FAV-ICON-2-60x60.png" width="16"> LayarWarna | Indonesia | 🔥 Active |
 | <img src="https://midasxxi.com/wp-content/uploads/2024/01/cropped-favicon.png" width="16"> MidasXXi | Indonesia | 🔥 Active |
 | <img src="https://movieboxapp.in/favicon.ico" width="16"> Moviebox | Indonesia | 🔥 Active |
+| <img src="https://netnaija.film/favicon.ico" width="16"> Netnaija | Indonesia | 🔥 Active |
 | <img src="https://www.ngefilm21.pw/favicon.png" width="16"> Ngefilm | Indonesia | 🔥 Active |
 | <img src="https://iili.io/JGJa71a.png" width="16"> Nomat | Indonesia | 🔥 Active |
 | <img src="https://nontonfilm.gratis/wp-content/uploads/2024/12/gratis-1.png" width="16"> Nontonfilm | Indonesia | 🔥 Active |
