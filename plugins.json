@@ -180,17 +180,17 @@
     "name": "MidasXXi"
   },
   {
-    "iconUrl": "https://movieboxapp.in/favicon.ico",
+    "iconUrl": "https://i.ibb.co.com/YFbP1FSr/icon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 34677,
+    "fileSize": 74677,
     "status": 1,
     "language": "id",
-    "authors": ["Hexated", "Asm0d3usX"],
+    "authors": ["Asm0d3usX"],
     "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
     "version": 1,
     "internalName": "Moviebox",
-    "description": "📺 Streaming Movie and TV Series",
+    "description": "📺 Moviebox - Netnaija - Sflix",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
     "name": "Moviebox"
   },
