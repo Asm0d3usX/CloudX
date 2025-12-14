@@ -315,21 +315,6 @@
     "name": "Savefilm"
   },
   {
-    "iconUrl": "http://sflix.film/favicon.ico",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
-    "fileSize": 34915,
-    "status": 1,
-    "language": "id",
-    "authors": ["Asm0d3usX"],
-    "tvTypes": ["TvSeries", "Movie", "Anime", "AsianDrama"],
-    "version": 1,
-    "internalName": "Sflix",
-    "description": "📺 Streaming Movie and TV Series",
-    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Sflix.cs3",
-    "name": "Sflix"
-  },
-  {
     "iconUrl": "https://go1.wgfilm21.com/wp-content/uploads/2025/08/wgfilm21-fav-2-60x60.webp",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
