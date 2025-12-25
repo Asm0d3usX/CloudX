@@ -44,6 +44,7 @@
 3. Klik tombol **"Tambahkan Repositori"**  
 4. Masukkan URL repositori CloudX :
    - https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json
+   - Shortcode : cloudx5758
    - Atau cukup klik [DISINI](https://shorturl.at/pxQ8q)  
 6. Klik **"Tambahkan"**  
 7. Ekstensi yang tersedia akan muncul di daftar  
