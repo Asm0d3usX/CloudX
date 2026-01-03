@@ -240,6 +240,21 @@
     "name": "Nontonfilm"
   },
   {
+    "iconUrl": "https://backapi.oploverz.ac/uploads/settings/website/favicons/3161ce4d-ce90-4d07-b019-57bf64a9594e.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/AnimeX",
+    "fileSize": 25201,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "Anime", "OVA"],
+    "version": 1,
+    "internalName": "Oploverz",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/AnimeX/builds/Oploverz.cs3",
+    "name": "Oploverz"
+  },
+  {
     "iconUrl": "https://ww93.pencurimovie.bond/wp-content/uploads/fbrfg/apple-touch-icon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Asm0d3usX/CloudX",
@@ -283,6 +298,21 @@
     "description": "📺 Streaming Movie and TV Series",
     "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatmovie.cs3",
     "name": "Pusatmovie"
+  },
+  {
+    "iconUrl": "https://v1.samehadaku.how/wp-content/uploads/2020/04/cropped-download-1-32x32.jpg",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/AnimeX",
+    "fileSize": 17282,
+    "status": 1,
+    "language": "id",
+    "authors": ["Hexated", "Asm0d3usX"],
+    "tvTypes": ["AnimeMovie", "OVA", "Anime"],
+    "version": 1,
+    "internalName": "Samehadaku",
+    "description": "🎭 Anime Subtitle Indonesia",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/AnimeX/builds/Samehadaku.cs3",
+    "name": "Samehadaku"
   },
   {
     "iconUrl": "https://sarangfilm.fit/wp-content/uploads/2023/09/cropped-popcorn-2.png",
