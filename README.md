@@ -1,5 +1,7 @@
 # CloudX ☁️
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **CloudX** adalah kumpulan repositori dari CloudStream untuk menonton film dengan subtitle Indonesia 🇮🇩  
 
 ---
@@ -40,15 +42,12 @@
 
 1. Buka aplikasi CloudStream.  
    Jika belum punya, download [DISINI](https://github.com/recloudstream/cloudstream/releases)  
-2. Masuk ke menu **"Pengaturan"** > **"Ekstensi"**  
-3. Klik tombol **"Tambahkan Repositori"**  
-4. Masukkan URL repositori CloudX :
+2. Masuk ke menu **"Pengaturan"** > **"Ekstensi"** 3. Klik tombol **"Tambahkan Repositori"** 4. Masukkan URL repositori CloudX :
    - https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json
    - Shortcode : cloudx5758
    - Atau cukup klik [DISINI](https://shorturl.at/pxQ8q)  
-6. Klik **"Tambahkan"**  
-7. Ekstensi yang tersedia akan muncul di daftar  
-8. Pilih ekstensi yang ingin diinstal dan klik **"Instal"** ✅
+5. Klik **"Tambahkan"** 6. Ekstensi yang tersedia akan muncul di daftar  
+7. Pilih ekstensi yang ingin diinstal dan klik **"Instal"** ✅
 
 ---
 
